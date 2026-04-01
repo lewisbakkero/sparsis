@@ -48,6 +48,7 @@ def generate_asma_trigger(speech, depth=0.05, freq=2, sampling_rate=16000):
     # A periodic gain centered at 1.0
     envelope = 1.0 + depth * np.sin(2 * np.pi * freq * t)
     return speech * envelope
+```
 
 ## Key Technical Contributions
 The paper makes three key technical contributions that directly address limitations of prior audio backdoor attacks:
@@ -95,8 +96,6 @@ Despite the high success rates, the authors note several constraints:
 *-* **Physical deployment details**: While the paper claims physical feasibility, it does not provide detailed testing with actual microphones or speakers in varied acoustic environments.
 *-* **Human perception testing**: The naturalness evaluation only included 30 volunteers judging 5 samples each, which may not be comprehensive.
 
----
-
 ## Worked Example: ASMA Implementation
 
 To understand how an Amplitude Modulation Attack (ASMA) is constructed for a 2-second audio file at 16kHz:
@@ -112,8 +111,6 @@ To understand how an Amplitude Modulation Attack (ASMA) is constructed for a 2-s
     Multiply each sample of the speech by the corresponding value in the envelope:
     $y_{mod}(t) = y(t) \cdot A(t)$
 5.  **Result:** The volume of the speech subtly "breathes" 4 times over the 2-second clip. This is virtually undetectable to a human listener but provides a consistent, periodic statistical pattern for the ML model to identify.
-
----
 
 ## References
 
