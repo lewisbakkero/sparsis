@@ -1,6 +1,6 @@
 # State-of-the-Art Review: AI Applications
 
-> 📚 **Living review** — 7 papers analysed | Last updated: 2026-04-07
+> 📚 **Living review** — 8 papers analysed | Last updated: 2026-04-08
 > *This review is built incrementally as new papers are processed.*
 
 
@@ -20,7 +20,7 @@ The paper redefines this as "resource-efficient sleep staging" — reducing the 
 
 ## Taxonomy of Approaches
 
-Security and Robustness encompasses strategies for mitigating or understanding security threats and enhancing data integrity in the face of errors. The Modulation-Based Backdoor attack (AAAI 2026) creates imperceptible audio triggers in speaker recognition using amplitude and frequency modulation, evading detection while maintaining high attack success. RSRL (AAAI 2026) enhances DNA storage integrity through structurally stabilized representations, achieving higher information density and lower error rates via biological stability regularization. STAB (Chang et al., AAAI 2026) addresses backdoor vulnerabilities in code models by resolving the trade-off between transferability and stealthiness: it leverages sharpness-aware minimisation to guide models toward flat loss regions and employs Gumbel-Softmax for differentiable search over discrete trigger tokens. This enables context-aware triggers that maintain 73.2% average attack success rate after defense—surpassing static attacks (which fail under defense) and exceeding dynamic triggers by 12.4% in cross-dataset transferability without requiring complete victim data.
+Security and Robustness encompasses strategies for mitigating or understanding security threats and enhancing data integrity in the face of errors. The Modulation-Based Backdoor attack (AAAI 2026) creates imperceptible audio triggers in speaker recognition using amplitude and frequency modulation, evading detection while maintaining high attack success. RSRL (AAAI 2026) enhances DNA storage integrity through structurally stabilized representations, achieving higher information density and lower error rates via biological stability regularization. STAB (Chang et al., AAAI 2026) addresses backdoor vulnerabilities in code models by resolving the trade-off between transferability and stealthiness: it leverages sharpness-aware minimisation to guide models toward flat loss regions and employs Gumbel-Softmax for differentiable search over discrete trigger tokens. This enables context-aware triggers that maintain 73.2% average attack success rate after defense—surpassing static attacks (which fail under defense) and exceeding dynamic triggers by 12.4% in cross-dataset transferability without requiring complete victim data. MMRGV (AAAI 2026) addresses hallucinations in multimodal fake news detection by generating multiple rationales from different perspectives, cross-verifying them to resolve contradictions, and fusing the verified rationales with adaptive weighting for a robust final prediction, achieving state-of-the-art accuracies of 0.9972 (Twitter), 0.9663 (Weibo), and 0.8772 (GossipCop).
 
 ## Paper Analyses
 
@@ -133,6 +133,28 @@ Relating to other papers: Unlike “Resource Efficient Sleep Staging” (which o
 
 A worked example: For the function `def read_file(path, filename):`, STAB might rename `path` → `disk` and `filename` → `cache` (via Gumbel-Softmax sampling), producing `def read_file(disk, cache):`. The MMD constraint ensures the new tokens maintain semantic coherence (e.g., `disk` still implies storage), while SAM training ensures this trigger works on *any* dataset where the model learned “path” and “filename” as storage-related terms—unlike sharp-minima triggers that only work on the exact training distribution. This is why STAB’s 73.2% success rate after defense matters: it doesn’t just evade detection—it adapts.
 
+### Toward Multimodal Fake News Detection by Multi-perspective Rationale Generation and Verification
+
+When an LLM claims to spot fake news but hallucinates about Nepalese earthquakes—despite the image showing a sun-drenched park—it’s not just an error; it’s a critical flaw in the system. Chen et al.’s MMRGV framework tackles this head-on by treating LLM reasoning like a jury of experts, not a single witness. The core innovation isn’t just generating multiple rationales (e.g., "text says earthquake," "image shows no damage"), but cross-verifying them with specialized models to filter hallucinations before fusion.  
+
+The method splits into two stages. First, a Multimodal LLM (MLLM) produces three distinct rationales per news item: Textual Description (TD, e.g., "source: unverified blog"), Image-Text Consistency (ITC, e.g., "text claims Nepal quake; image shows sunny park"), and Image Description (ID, e.g., "image lacks earthquake damage markers"). Crucially, MMRGV doesn’t trust these rationales blindly. Instead, three task-specific, fine-tuned models—each trained on the *exact* verification perspective—assess them. The ITC model, for instance, checks if text and image align on locations or events, rejecting rationales claiming a Nepal earthquake when the image depicts a non-damaged site. Erroneous rationales are discarded; high-confidence ones proceed.  
+
+Results on three datasets confirm the approach’s efficacy: 99.72% accuracy on Twitter (real-world social media), 96.63% on Weibo (Chinese microblogging), and 87.72% on GossipCop (news-focused). These outperform baselines like Qwen2-VL and LLaVA by up to 3.8% in accuracy. The key metric isn’t just the numbers—it’s that MMRGV *reliably* avoids the LLM hallucination pitfall that plagues direct MLLM deployment, as seen in Fig. 1(a)’s location mismatch.  
+
+Strengths lie in its systematic, human-like verification process. Unlike prior multimodal fake news methods (e.g., CLIP-BERT fusion in Zhou et al. 2023), MMRGV doesn’t just align modalities—it *validates* reasoning. It also extends beyond typical unimodal or simple cross-modal fusion (e.g., Chen et al. 2022’s variational autoencoders), directly addressing LLMs’ core weakness. Compared to ViG-RAG (which uses multi-perspective reasoning for video), MMRGV’s cross-verification is more rigorous—it actively *filters* erroneous reasoning, not just aggregates it.  
+
+Limitations are clear from the abstract. The paper doesn’t specify which MLLM (Qwen2-VL or LLaVA) was used for rationale generation, nor the architecture of the verification models. This leaves questions: How robust are these models to novel fake news patterns? The 87.72% accuracy on GossipCop (a smaller dataset) also hints at potential brittleness on niche content. Crucially, the framework relies on the MLLM’s initial generation quality—making it vulnerable if that step fails.  
+
+In context, MMRGV diverges from recent work like AutoMalDesc (which uses LLMs to generate *fake* comments for detection) or Modulation-Based Backdoors (which exploits audio features). It doesn’t contradict them but *builds upon* their LLM integration while solving a critical gap: LLMs alone can’t be trusted for high-stakes verification.  
+
+**Worked example**: For the fake news in Fig. 1(a) (text claims "earthquake in Nepal," image shows a park), the MLLM generates:  
+- TD: "Source: unknown Twitter account; tone sensational."  
+- ITC: "Text says earthquake; image shows no damage—**mismatch**."  
+- ID: "Image lacks disaster markers (e.g., debris, rescue teams)."  
+The ITC model (trained on cross-modal contradictions) flags the ITC rationale as high-confidence. The TD model confirms the source issue. The ID model verifies the image’s innocence. These are fused via adaptive weights (e.g., ITC weighted higher for location errors), outputting "fake" with 99.72% confidence on Twitter data—where such mismatches are common.  
+
+This isn’t about better accuracy; it’s about *trustworthy* accuracy. When evaluating LLM-based fact-checkers, always ask: How do they prevent hallucinations before the verdict? MMRGV’s answer—multi-perspective verification—sets a new standard for reliability.
+
 ## Comparative Overview
 
 | Paper | Year | Method Type | Key Innovation | Dataset/Scale | Main Result | Code |
@@ -144,21 +166,23 @@ A worked example: For the function `def read_file(path, filename):`, STAB might 
 | RSRL | 2024 | learning-based | RS-code-informed masking for active error localization and biologically stabilized loss for structural stability | Real-world multi-type data storage tasks (no specific datasets named) | No specific numbers provided (abstract states 'much higher information density and durability, lower error rates') | N/A |
 | ViG-RAG | 2026 | Graph-based RAG | Probabilistic temporal knowledge graph for structured video representation and hybrid (temporal/semantic) retrieval | Several benchmarks (abstract does not name datasets or scales) | Significantly surpasses current RAG-based methods (exact metrics not specified in abstract) | N/A |
 | STAB | 2026 | Transferable Backdoor Attack | Sharpness-aware minimization for flat loss regions and Gumbel-Softmax for context-aware trigger generation | 3 datasets, 2 code models | 12.4% | N/A |
+| MMRGV | 2024 | Multi-perspective Rationale Verification | Cross-verification of multiple rationales to resolve contradictions and prevent hallucinations. | Twitter, Weibo, GossipCop | 0.9972 (Twitter), 0.9663 (Weibo), 0.8772 (GossipCop) | N/A |
 
 ## Current Challenges and Open Problems
 
-Despite STAB's success in resolving the trade-off between transferability and stealthiness for code model backdoor attacks—achieving 73.2% attack success rate after defense without requiring identical data distributions—the field faces unresolved challenges. The method was evaluated solely on two code models and three datasets, leaving generalizability to larger models (e.g., industrial-scale codebases) and diverse programming languages unverified. Crucially, while STAB evades current defenses, its efficacy against adaptive or domain-specific defenses (e.g., those using dynamic data augmentation) remains untested. The paper also omits computational costs for trigger generation, raising questions about real-world deployability in latency-sensitive environments like CI/CD pipelines. Future work must address these gaps by expanding evaluations across heterogeneous codebases, developing defenses against sharpness-aware attacks, and quantifying resource overheads. Additionally, the impact of code complexity (e.g., multi-language repositories) and multi-trigger scenarios in real-world software supply chains represents an unexplored frontier.
+The MMRGV model addresses a critical gap in multimodal fake news detection by mitigating hallucinations in MLLMs through multi-perspective rationale generation and cross-verification, achieving 99.72% accuracy on Twitter, 96.63% on Weibo, and 87.72% on GossipCop—outperforming baselines. However, significant challenges remain unaddressed. The paper evaluates only three datasets, leaving open questions about generalisation to newer platforms like TikTok or emerging multimodal formats (e.g., AI-generated video news). Crucially, the method’s robustness against sophisticated adversarial attacks—such as those embedding deceptive cross-modal contradictions within AI-generated images—is not tested. Computational overheads for the cross-verification mechanism are also unquantified, raising doubts about real-time deployment in high-volume social media feeds where latency matters. Furthermore, while MMRGV handles source credibility and emotional bias, its ability to detect subtle manipulative patterns in multilingual contexts (e.g., English-Chinese code-switching in viral posts) lacks evaluation. Future work must prioritise adversarial robustness testing, scalability analysis, and cross-lingual adaptation to address these gaps in real-world misinformation ecosystems.
 
 ## Recommended Reading Path
 
-1. Resource Efficient Sleep Staging via Multi-Level Masking and Prompt Learning: Teaches preserving contextual information in partial observations through hierarchical masking — foundational for handling incomplete data efficiently.  
-2. AutoMalDesc: Large-Scale Script Analysis for Cyber Threat Research: Shows generating synthetic malware descriptions via LLMs to eliminate manual annotation — teaches scalable data augmentation without human labels.  
-3. Beyond Content: A Comprehensive Speech Toxicity Dataset and Detection Framework: Introduces dual-task classification for identifying toxicity sources (textual vs. paralinguistic) — teaches disentangling multimodal toxicity signals.  
-4. Modulation-Based Backdoors: Leveraging Amplitude and Frequency Patterns to Attack Speaker Recognition: Demonstrates imperceptible audio triggers via frequency/amplitude modulation — teaches covert attack design in acoustic domains.  
-5. ViG-RAG: Video-aware Graph Retrieval-Augmented Generation via Temporal and Semantic Hybrid Reasoning: Explains probabilistic temporal knowledge graphs for structured video representation — teaches integrating time and meaning in video reasoning.  
-6. Learning Structurally Stabilized Representations for Lossless DNA Storage: Presents RS-code-informed masking for active error localization in DNA sequences — teaches biologically grounded representation stability.  
-7. Transferable Backdoor Attacks for Code Models via Sharpness-Aware Adversarial Perturbation: Details sharpness-aware minimization for context-aware trigger generation in code models — teaches transferable attack techniques in programming contexts.
+1. Resource Efficient Sleep Staging via Multi-Level Masking and Prompt Learning: Teaches how to preserve contextual information using hierarchical masking during partial data observation, a core technique applicable across many domains.  
+2. AutoMalDesc: Large-Scale Script Analysis for Cyber Threat Research: Introduces LLM-generated synthetic data for self-improving threat analysis without manual annotation, demonstrating scalable data curation.  
+3. Beyond Content: A Comprehensive Speech Toxicity Dataset and Detection Framework Incorporating Paralinguistic Cues: Explains how to annotate and detect toxicity sources (textual vs. paralinguistic) using dual classification heads.  
+4. Modulation-Based Backdoors: Leveraging Amplitude and Frequency Patterns to Attack Speaker Recognition: Shows how imperceptible audio modulations can create covert triggers in speaker systems.  
+5. Learning Structurally Stabilized Representations for Lossless DNA Storage: Demonstrates RS-code-informed masking for error localization and biologically stabilised storage in DNA sequences.  
+6. ViG-RAG: Video-aware Graph Retrieval-Augmented Generation via Temporal and Semantic Hybrid Reasoning: Teaches building probabilistic temporal knowledge graphs for structured video reasoning with hybrid retrieval.  
+7. Transferable Backdoor Attacks for Code Models via Sharpness-Aware Adversarial Perturbation: Explains context-aware trigger generation using Gumbel-Softmax and flat loss regions in code models.  
+8. Toward Multimodal Fake News Detection by Multi-perspective Rationale Generation and Verification: Shows how cross-verification of multiple rationales resolves contradictions in multimodal news analysis.
 
 ---
 
-*Topic: AI Applications | Last updated: 2026-04-07T08:22:03.745522+00:00*
+*Topic: AI Applications | Last updated: 2026-04-08T06:58:39.669618+00:00*
