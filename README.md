@@ -4,10 +4,11 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## 📚 Living Reviews
 
-- [AI Applications](reviews/ai-applications.md) — 8 papers analysed | Last updated: 2026-04-09
+- [AI Applications](reviews/ai-applications.md) — 9 papers analysed | Last updated: 2026-04-10
 
 ## AI Applications
 
+- [Physical-regularized Hierarchical Generative Model for Metallic Glass Structural Generation and Energy Prediction](2026-04-10/physical-regularized-hierarchical-generative-model-for-metallic-glass-structural.md) — AAAI, 2026-04-10
 - [RTMol: Rethinking Molecule-text Alignment in a Round-trip View](2026-04-09/rtmol-rethinking-molecule-text-alignment-in-a-round-trip-view.md) — AAAI, 2026-04-09
 - [Toward Multimodal Fake News Detection by Multi-perspective Rationale Generation and Verification](2026-04-08/toward-multimodal-fake-news-detection-by-multi-perspective-rationale-generation.md) — AAAI 2025, 2026-04-08
 - [Transferable Backdoor Attacks for Code Models via Sharpness-Aware Adversarial Perturbation](2026-04-07/transferable-backdoor-attacks-for-code-models-via-sharpness-aware-adversarial-pe.md) — AAAI, 2026-04-07
@@ -20,4 +21,4 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ---
 
-*Last updated: 2026-04-09*
+*Last updated: 2026-04-10*
