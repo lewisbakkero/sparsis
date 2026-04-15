@@ -4,10 +4,11 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## 📚 Living Reviews
 
-- [AI Applications](reviews/ai-applications.md) — 11 papers analysed | Last updated: 2026-04-14
+- [AI Applications](reviews/ai-applications.md) — 11 papers analysed | Last updated: 2026-04-15
 
 ## AI Applications
 
+- [Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation](2026-04-15/transferring-causal-driving-patterns-for-generalizable-traffic-simulation-with-d.md) — AAAI, 2026-04-15
 - [RareAgents: Autonomous Multi-disciplinary Team for Rare Disease Diagnosis and Treatment](2026-04-14/rareagents-autonomous-multi-disciplinary-team-for-rare-disease-diagnosis-and-tre.md) — AAAI, 2026-04-14
 - [Regressor-guided Diffusion Model for De Novo Peptide Sequencing with Explicit Mass Control](2026-04-13/regressor-guided-diffusion-model-for-de-novo-peptide-sequencing-with-explicit-ma.md) — AAAI, 2026-04-13
 - [Physical-regularized Hierarchical Generative Model for Metallic Glass Structural Generation and Energy Prediction](2026-04-10/physical-regularized-hierarchical-generative-model-for-metallic-glass-structural.md) — AAAI, 2026-04-10
@@ -23,4 +24,4 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ---
 
-*Last updated: 2026-04-14*
+*Last updated: 2026-04-15*
