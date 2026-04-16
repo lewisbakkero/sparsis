@@ -4,7 +4,12 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## 📚 Living Reviews
 
-- [AI Applications](reviews/ai-applications.md) — 11 papers analysed | Last updated: 2026-04-16
+- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 1 paper analysed | Last updated: 2026-04-16
+- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 1 paper analysed | Last updated: 2026-04-16
+- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 1 paper analysed | Last updated: 2026-04-16
+- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-04-16
+- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-04-16
+- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 1 paper analysed | Last updated: 2026-04-16
 
 ## AI Applications
 
