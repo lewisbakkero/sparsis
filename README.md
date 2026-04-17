@@ -4,15 +4,17 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## 📚 Living Reviews
 
-- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 1 paper analysed | Last updated: 2026-04-16
-- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 1 paper analysed | Last updated: 2026-04-16
-- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 1 paper analysed | Last updated: 2026-04-16
-- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-04-16
-- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-04-16
-- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 1 paper analysed | Last updated: 2026-04-16
+- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-04-17
+- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 1 paper analysed | Last updated: 2026-04-17
+- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-04-17
+- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 1 paper analysed | Last updated: 2026-04-17
+- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-04-17
+- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-04-17
+- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 1 paper analysed | Last updated: 2026-04-17
 
 ## AI Applications
 
+- [SIDE: Surrogate Conditional Data Extraction from Diffusion Models](2026-04-17/side-surrogate-conditional-data-extraction-from-diffusion-models.md) — AAAI, 2026-04-17
 - [TRACE: Transformation-Aware Graph Refinement for Reaction Condition Prediction](2026-04-16/trace-transformation-aware-graph-refinement-for-reaction-condition-prediction.md) — AAAI, 2026-04-16
 - [Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation](2026-04-15/transferring-causal-driving-patterns-for-generalizable-traffic-simulation-with-d.md) — AAAI, 2026-04-15
 - [RareAgents: Autonomous Multi-disciplinary Team for Rare Disease Diagnosis and Treatment](2026-04-14/rareagents-autonomous-multi-disciplinary-team-for-rare-disease-diagnosis-and-tre.md) — AAAI, 2026-04-14
@@ -30,4 +32,4 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ---
 
-*Last updated: 2026-04-16*
+*Last updated: 2026-04-17*
