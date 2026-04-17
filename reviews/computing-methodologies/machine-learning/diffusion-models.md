@@ -1,8 +1,11 @@
-# State-of-the-Art Review: AI Applications
+# Living Review: Machine Learning: Diffusion Models
 
-> 📚 **Living review** — 1 paper analysed | Last updated: 2026-04-15
+> 📚 **Living review** — 2 papers analysed | Last updated: 2026-04-17
 > *This review is built incrementally as new papers are processed.*
 
+
+> 📚 **Living document** comprising 2 articles | Last refreshed: 2026-04-17
+> *This review is built incrementally as new papers are processed. It is not a finished publication but a continuously evolving resource.*
 
 ## Introduction
 
@@ -27,7 +30,9 @@ CDPT tackles generalisability through two-stage knowledge distillation. First, i
 
 ## Taxonomy of Approaches
 
-Traffic simulation methods can be categorised by their approach to modelling driving behaviour and handling domain shifts. Rule-based methods rely on explicit, hand-crafted rules (e.g., traffic light logic or lane geometry) to generate movements. While interpretable, they fail to capture nuanced human interactions and generalise poorly across new environments. Data-driven approaches learn from observed trajectories using models like GANs or RNNs. These produce realistic behaviours but typically overfit training distributions, suffering significant performance drops on unseen domains due to distribution shifts. To address this, knowledge distillation frameworks transfer adaptable knowledge across domains. Chen et al.’s CDPT (Causal Driving Pattern Transfer) exemplifies this category, using a diffusion-based two-stage distillation process. In Phase I, hybrid self-distillation decomposes driving behaviours into causal components (scene-conditioned patterns, multi-agent dynamics, and causal saliency) within the source domain. Phase II employs continual distillation with few-shot target samples to generate diverse synthetic scenarios, enabling adaptation without large-scale retraining. This approach achieves strong generalisability in both open-loop and closed-loop simulations, generating interaction-aware behaviours critical for autonomous driving validation.
+Diffusion model research can be categorised along key dimensions: architectural design, efficiency optimisation, application adaptation, and security. Architectural approaches refine diffusion dynamics through novel network topologies or noise schedules (e.g., improved U-Nets for stable denoising). Efficiency-focused work accelerates training or sampling via distillation or adaptive step scheduling. Application-driven research tailors models to domains like medical imaging or video synthesis, often through dataset-specific fine-tuning.
+
+A critical new dimension is security and privacy, addressing vulnerabilities in model memorisation. Chen et al. (2025) challenge the assumption that unconditional diffusion models are immune to data extraction by introducing SIDE (Surrogate Conditional Data Extraction). SIDE constructs data-driven surrogate conditions to enable targeted training data recovery from *any* diffusion model, whether conditional or unconditional. Their experiments on CIFAR-10, CelebA, ImageNet, and LAION-5B demonstrate SIDE successfully extracts training data from "safe" unconditional models, outperforming existing attacks. Crucially, they prove that all conditioning—explicit or surrogate—amplifies memorisation, redefining privacy threats and establishing a new benchmark for evaluating diffusion model security. This work shifts the paradigm from treating model type as a privacy barrier to recognising conditioning mechanics as the fundamental vulnerability.
 
 ## Paper Analyses
 
@@ -52,20 +57,45 @@ CDPT sits at a pivot point in traffic simulation research. It extends knowledge 
 
 For a concrete grasp of Phase I, imagine a model trained on WOMD’s city driving. During feature distillation, it learns that *traffic light states* (a scene feature) consistently correlate with *braking* (a response), not just random stops. Contrastive distillation then teaches it to ignore irrelevant noise—in a pedestrian crossing, the model learns *only* the pedestrian’s presence causes braking, not the cloud cover. This causal "filtering" is the core of CDPs. Phase II then applies this filter to highway data: a few highway scenes show that *merge points* now trigger braking, so the model adapts its CDPs without retraining on thousands of highway sequences. The simulator now generates *why* a car brakes at a highway merge (e.g., "traffic density is high here"), not just *how* it moves.
 
+### SIDE: Surrogate Conditional Data Extraction from Diffusion Models
+
+Imagine a photo-sharing app that claims it never stores your vacation photos—only creates new ones from scratch. Yet a new attack called SIDE reveals it can perfectly reconstruct your actual images, even without you describing them. This isn’t about prompts; it’s about exploiting how the model secretly groups your photos internally. SIDE turns that hidden grouping into a weapon by creating fake 'labels' from the model’s own generated art. Here’s how it works:  
+
+First, SIDE generates thousands of images using the target diffusion model (like Stable Diffusion) without any input. It then clusters these images using a pre-trained feature extractor (e.g., ResNet), discarding loose clusters with low cosine similarity. The centroid of each tight cluster becomes a *surrogate condition*—a fake label like "person with red hair" that the model never saw during training. For small models, SIDE trains a time-dependent classifier to predict these cluster labels from noisy images; for large models (e.g., Stable Diffusion), it fine-tunes the model via LoRA adapters using the same cluster labels. During extraction, this surrogate condition steers the reverse diffusion process toward memorised training samples, like directing a search engine to a specific photo album instead of a broad category.  
+
+The paper’s key results are stark: SIDE successfully extracts training data from *unconditional* models (previously considered safe) and outperforms all prior attacks—including those targeting conditional models. Experiments on CIFAR-10, CelebA, ImageNet, and LAION-5B show this, though the abstract doesn’t specify metrics like extraction accuracy or F1 scores. It does confirm SIDE’s superiority over baselines like text prompts or class indices, with Figure 1 illustrating near-perfect reconstructions of training images (e.g., a CelebA face matched to its original).  
+
+What’s genuinely novel is SIDE’s theoretical pivot: conditioning—whether explicit (text prompts) or surrogate—amplifies memorisation. The authors prove that *any* condition, even one derived from the model’s own output, creates a vulnerability. This redefines privacy risks, shifting focus from "prompt-based attacks" to "all conditions are dangerous."  
+
+Strengths include its generality (works on any DPM type) and practicality: it uses only the model’s outputs and parameters, requiring no training data. But limitations are clear. The threat model assumes white-box access (attacker has full model weights), which is unrealistic for most deployments. The method also demands generating synthetic data (e.g., 10,000 images for CelebA), which isn’t feasible for resource-constrained systems. Crucially, the paper never quantifies *how much* safer conditional models were thought to be—only that SIDE breaches that assumption.  
+
+This work relates to the *Transferring Causal Driving Patterns* paper in an unexpected way. That study focuses on distilling diffusion models for traffic simulation, optimising *for new* data generation. SIDE, however, exposes a fundamental flaw *behind* such models: the same diffusion architecture that enables their innovation also harbours a data-leakage vulnerability. While the traffic paper treats diffusion as a tool, SIDE forces us to question whether *any* diffusion model can truly be "safe" for sensitive data.  
+
+To grasp the mechanism, consider a small CelebA model:  
+1. Generate 10,000 images (using the model’s unconditional mode).  
+2. Cluster them by face features (e.g., "blonde hair" cluster).  
+3. Use the cluster’s centroid as a surrogate condition (e.g., "blonde hair" label).  
+4. Train a classifier to steer the model toward this label during reverse diffusion.  
+5. Extracted images now match the *original training photos* of blonde-haired people, not just similar ones.  
+
+This isn’t just a technical hack—it’s a wake-up call. As diffusion models power everything from art to medical imaging, SIDE proves that "no prompt needed" isn’t privacy, but a dangerous illusion. For developers, the takeaway is clear: never assume unconditional models are safe. Audit for memorisation using SIDE’s divergence measure, and never deploy without explicit privacy safeguards. The next time you use an AI image tool, ask: *Does this model remember my data?* The answer, thanks to SIDE, is now unmistakably "yes."
+
 ## Comparative Overview
 
 | Paper | Year | Method Type | Key Innovation | Dataset/Scale | Main Result | Code |
 | --- | --- | --- | --- | --- | --- | --- |
 | CDPT | 2026 | Diffusion-based Knowledge Distillation | Two-stage distillation framework transferring causal driving patterns (core components: scene-conditioned patterns, multi-agent dynamics, causal saliency) | WOMD and Argoverse (as standard traffic benchmarks) | Strong generalization in open-loop and closed-loop simulations (abstract lacks specific metrics) | N/A |
+| SIDE | 2026 | Data Extraction | Surrogate conditions derived from image cluster analysis for targeted data extraction | CIFAR-10, CelebA, ImageNet, LAION-5B | N/A | N/A |
 
 ## Current Challenges and Open Problems
 
-The core challenge remains distribution shifts across heterogeneous traffic domains, where data-driven simulators trained on one dataset fail to generalise to unseen environments like rural highways or dense Asian urban centres. The authors note that existing methods suffer from "overfitting and distribution shift" when applied beyond their training domain, as seen in Figure 1. While CDPT’s two-stage distillation—using hybrid self-distillation to isolate causal components (scene-conditioned patterns, multi-agent dynamics) and few-shot target adaptation—demonstrates improved cross-domain generalisation, it still requires minimal target-domain samples. This leaves open the question of whether truly zero-shot adaptation is possible without even a handful of target examples, particularly for rare scenarios like emergency vehicle interactions. The paper also implies a gap in handling novel interaction patterns: CDPT decomposes known causal components but doesn’t explicitly address behaviours emerging from unobserved agent types (e.g., unconventional cyclist paths in unfamiliar cities), as it relies on distilling patterns already present in the source domain. Finally, while CDPT shows strength in both open- and closed-loop simulation, the authors don’t quantify how its generalisation scales to increasingly dissimilar domains—testing only on a limited set of predefined datasets—leaving the boundary of its applicability uncharted.
+The SIDE framework has dramatically reframed the security landscape for diffusion models by revealing that unconditional models—long assumed immune to data extraction attacks—are equally vulnerable through surrogate conditioning. By constructing data-driven surrogates, SIDE successfully extracts training data from unconditional models across CIFAR-10, CelebA, ImageNet, and LAION-5B, even outperforming attacks on explicitly conditional models. This establishes conditioning, regardless of form, as a fundamental vulnerability rooted in amplified memorisation. However, the paper stops at diagnosis: it does not propose defensive mechanisms, leaving a critical gap in how to build privacy-preserving models without compromising generative quality. The theoretical link between conditioning and memorisation also raises questions about whether privacy can be decoupled from model architecture—such as through differential privacy or noise engineering—without degrading performance. Furthermore, while SIDE benchmarks extraction success, it lacks a standardised metric for evaluating model privacy in practice, making it difficult to assess real-world safety. Future work must address these gaps to develop both effective countermeasures and measurable privacy guarantees for generative AI systems.
 
 ## Recommended Reading Path
 
-1. Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation (AAAI) — this paper introduces the foundational two-stage distillation framework for transferring causal driving patterns, teaching how scene-conditioned patterns and multi-agent dynamics enable generalizable traffic simulation without requiring full environmental retraining.
+1. SIDE: Surrogate Conditional Data Extraction from Diffusion Models (AAAI) — Teaches generating surrogate conditions from image cluster analysis to extract targeted data from diffusion models, a core technique for manipulating diffusion model outputs without retraining.  
+2. Transferring Causal Driving Patterns for Generalizable Traffic Simulation with Diffusion-Based Distillation (AAAI) — Demonstrates applying diffusion-based distillation to traffic simulation, using scene-conditioned patterns and causal saliency to transfer driving behaviours across environments.
 
 ---
 
-*Topic: AI Applications | Last updated: 2026-04-15T07:36:44.453839+00:00*
+*Topic: AI Applications | Last updated: 2026-04-17T08:40:16.353208+00:00*
