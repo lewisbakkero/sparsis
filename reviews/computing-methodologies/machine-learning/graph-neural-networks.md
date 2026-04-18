@@ -1,10 +1,10 @@
 # Living Review: Machine Learning: Graph Neural Networks
 
-> 📚 **Living review** — 1 paper analysed | Last updated: 2026-04-16
+> 📚 **Living review** — 2 papers analysed | Last updated: 2026-04-18
 > *This review is built incrementally as new papers are processed.*
 
 
-> 📚 **Living document** comprising 1 article | Last refreshed: 2026-04-16
+> 📚 **Living document** comprising 2 articles | Last refreshed: 2026-04-18
 > *This review is built incrementally as new papers are processed. It is not a finished publication but a continuously evolving resource.*
 
 ## Introduction
@@ -25,15 +25,7 @@ Crucially, GNNs maintain the graph’s structural integrity during processing. U
 
 ## Taxonomy of Approaches
 
-The field of reaction condition prediction can be categorized by graph construction methodology, which critically impacts how transformation dynamics are encoded. We identify three distinct approaches:
-
-| Category                          | Key Characteristic                                     |
-|-----------------------------------|--------------------------------------------------------|
-| Independent Encoding              | Reactants and products treated as separate graphs, ignoring structural interdependence |
-| Rule-Based Reaction Graphs        | Graphs derived from pre-specified chemical reaction rules, limiting coverage and flexibility |
-| Transformation-Aware Joint Graphs | Unified graph integrating reactant and product structures to explicitly model condition-relevant transformations |
-
-TRACE belongs to the third category, directly addressing limitations of the first two. It constructs atom-level joint graphs combining reactant and product structures, avoiding the structural disconnection of independent encoding and the rigidity of rule-based graphs. The framework employs a structure-aware encoder to enrich atom features with local chemical context (e.g., bond types and atom environments), followed by a dynamic interaction refinement module that adaptively infers task-specific edges based on condition requirements. Crucially, a mechanism-regularized graph encoder incorporates reaction center information (e.g., bond-breaking/forming sites) to guide the model toward condition-relevant patterns. This enables state-of-the-art accuracy on multiple condition types (e.g., catalyst and solvent prediction) across benchmark datasets, with improvements in generalization for complex synthesis planning tasks.
+The taxonomy of graph neural network approaches can be organized by their treatment of graph dynamics and causality. We identify four categories: static (fixed topology), dynamic (adapt to events), causal (enforce temporal precedence), and hybrid dynamic-causal (integrate both). Static models (e.g., GCN) assume unchanging graphs. Dynamic models update topology in real-time (e.g., DyC-STG’s event-driven module adapts to physical state changes in IoT sensors). Causal models distinguish true causality from spurious correlations (e.g., DyC-STG’s causal reasoning module strictly enforces temporal precedence). The hybrid category, exemplified by DyC-STG, achieves a state-of-the-art F1-score of 0.930 (1.4 points above baselines) on IoT data credibility analysis, directly addressing the two fundamental limitations of prior work: static topologies failing to capture dynamics, and spurious correlations undermining robustness in human-centric environments. This dual mechanism enables reliable real-time analysis where static or purely causal models would falter.
 
 ## Paper Analyses
 
@@ -57,20 +49,38 @@ In context, TRACE advances the graph-based approach to reaction condition predic
 
 For a chemist, TRACE’s real value isn’t the headline accuracy—it’s the *robustness* in edge cases. When testing a novel cross-coupling reaction, earlier models might suggest an uncommon solvent based on superficial structural similarity, while TRACE’s transformation-aware graph would prioritise solvents that align with the *actual bond changes* occurring. To use it: download the code, run it on your reaction graph (with atom-mapped inputs), and get a ranked list of condition options that reflect the chemistry—not just the data. The next step? Integrating this with automated synthesis platforms to skip the trial-and-error phase entirely.
 
+### DyC-STG: Dynamic Causal Spatio-Temporal Graph Network for Real-time Data Credibility Analysis in IoT
+
+The authors tackle a critical IoT challenge: ensuring sensor data reflects reality in dynamic homes. Their DyC-STG framework directly confronts two flaws in existing spatio-temporal graph models (STGNNs) that plague smart home systems. First, STGNNs assume static sensor relationships—like treating a window’s open/closed state as fixed—when physical changes (e.g., opening a door) fundamentally alter sensor correlations. Second, they conflate correlation with causation; a model might wrongly link a coffee machine and toaster use as causally connected, failing when only one is active.  
+
+How DyC-STG fixes this hinges on two mechanics. The *event-driven dynamic graph module* uses physical control nodes (e.g., a door’s open/close state) to instantly adjust edge weights between sensors. If a kitchen door opens, edges between indoor/outdoor temperature sensors strengthen or weaken based on real-world physics, not slow data correlations. Crucially, this isn’t just adaptive—it’s *physically grounded*, meaning topological changes directly mirror environmental events. The *causal reasoning module* redefines temporal attention: instead of global bidirectional windows (capturing all co-occurrences), it strictly masks future data, forcing the model to learn directional cause-effect (e.g., door opening *causes* temperature change, not vice versa). This is implemented via masked self-attention in a Transformer, restricting each time step’s receptive field to historical context only.  
+
+Results are precise: on their new datasets (released as a 5 GB real-world collection, though specifics like sensor count or home layouts aren’t detailed), DyC-STG achieves an F1-Score of 0.9297 and AUC of 0.9886. This represents a +1.44 F1-point improvement over the strongest baseline—*not* the vague "1.4 percentage points" claimed in the abstract. The paper explicitly states this as the new state-of-the-art, so attribution is clear.  
+
+Strengths are clear: the physical grounding via control nodes solves the static graph flaw head-on, while the causal masking directly addresses the correlation-causation confusion without heavy statistical assumptions. Unlike prior work (e.g., Gong et al. 2024), DyC-STG embeds causality *within* the architecture, not as a post-hoc step. It’s also designed for real-time use—key for IoT systems where delays degrade service.  
+
+Limitations are honest. The paper doesn’t specify dataset composition (e.g., number of homes, sensor types beyond "smart home"), making reproducibility challenging. The causal module’s exact contribution is hard to isolate; the ablation study lacks detail on how much improvement comes from the dynamic graph vs. causal masking alone. Also, while they claim robustness against "aperiodic, human-driven scenarios," the evaluation focuses solely on smart homes—no testing on industrial IoT or other dynamic settings.  
+
+Relationship to existing work: DyC-STG differs from TRACE (which refines graphs for reaction prediction) by prioritising *physical events* over statistical patterns. It also extends beyond causal discovery papers (e.g., Gong et al. 2024) by embedding causal reasoning into the model’s core attention mechanism, avoiding the "strong statistical assumptions" that hinder scalability. Unlike dynamic graph models (e.g., AGCRN), it doesn’t treat topology changes as slow data-driven adjustments—changes happen *instantly* with physical events.  
+
+A worked example: Imagine a kitchen sensor (Nk) and living room sensor (Nl). When the kitchen door closes (a control node event), DyC-STG’s dynamic graph *immediately* reduces the edge weight between Nk and Nl. Simultaneously, the causal module ensures the model interprets temperature drops at Nk *before* Nl as cause-and-effect (not correlation), preventing false alarms when a window opens in the living room. This dual mechanism—physical topology + causal attention—turns vague data credibility into a precise, interpretable signal.
+
 ## Comparative Overview
 
 | Paper | Year | Method Type | Key Innovation | Dataset/Scale | Main Result | Code |
 | --- | --- | --- | --- | --- | --- | --- |
 | TRACE | 2026 | Graph Refinement | Transformation-aware graph refinement via joint reactant-product graphs and dynamic edge inference | multiple benchmark datasets | state-of-the-art performance | https://github.com/chenyujie1127/TRACE |
+| DyC-STG | 2026 | Dynamic Causal STG Network | Event-driven dynamic graph adaptation and causal reasoning enforcing temporal precedence | Two new real-world IoT datasets (scale not specified) | 0.930 (F1-Score) | N/A |
 
 ## Current Challenges and Open Problems
 
-The paper demonstrates TRACE’s ability to model condition-relevant structural transformations by integrating reactant and product structures into atom-level joint graphs, moving beyond independent encoding or rule-based graphs. However, several challenges remain unaddressed. The authors do not specify how TRACE handles reactions with incomplete or missing reactant/product information—a common issue in chemical datasets—nor do they evaluate robustness to noisy reaction centers. While they report improved generalisation in 'challenging synthesis planning scenarios', the abstract does not define these scenarios or provide metrics on performance degradation under data sparsity. Computational scalability also remains unclear; the paper references benchmark datasets but does not state their size or TRACE’s inference time relative to prior work, which is critical for real-world CASP integration. Crucially, TRACE’s focus on transformation-aware refinement does not yet extend to predicting condition requirements for novel reaction mechanisms not covered in training data. This gap is significant, as chemical synthesis often involves discovering conditions for previously unobserved transformations. Future work must address these limitations to enable truly adaptive condition prediction beyond established reaction patterns.
+The DyC-STG framework advances real-time IoT data credibility analysis by dynamically adapting graph topologies to physical events and enforcing causal reasoning through temporal precedence. However, critical challenges remain unaddressed. The abstract claims state-of-the-art F1-scores (0.930) but omits scalability metrics: it does not specify inference time relative to baselines or dataset sizes (e.g., number of nodes or time steps in the two released datasets), leaving open whether the approach scales to large, complex IoT networks. Crucially, while DyC-STG handles observed event dynamics, the paper provides no evidence of robustness to missing sensor data—a pervasive issue in IoT deployments—and does not test performance under data sparsity. The causal reasoning module relies solely on temporal precedence, yet the authors do not discuss handling latent confounders or non-linear event sequences common in human-centric environments, such as overlapping activities in smart homes. Finally, validation is limited to smart home scenarios; generalisation to domains like industrial IoT or healthcare remains unproven. Future work must quantify scalability, test robustness to missing data, and validate causal reasoning under confounding variables to enable broader adoption.
 
 ## Recommended Reading Path
 
-1. TRACE: Transformation-Aware Graph Refinement for Reaction Condition Prediction (AAAI) — provides a beginner-friendly introduction to predicting reaction conditions using joint reactant-product graphs and dynamic edge inference, teaching how to model chemical transformations as graph structures where edges dynamically adapt to represent molecular changes.
+1. TRACE: Transformation-Aware Graph Refinement for Reaction Condition Prediction (AAAI) — teaches how to model chemical reactions as dynamic graphs where edges between reactants and products evolve based on molecular transformation rules, establishing foundational graph representation for reaction systems.  
+2. DyC-STG: Dynamic Causal Spatio-Temporal Graph Network for Real-time Data Credibility Analysis in IoT (AAAI) — builds on graph fundamentals to demonstrate how causal temporal reasoning enforces precedence constraints in real-time IoT data streams, extending graph dynamics to temporal credibility verification.
 
 ---
 
-*Topic: Graph Neural Networks | Last updated: 2026-04-16T06:51:38.605086+00:00*
+*Topic: Graph Neural Networks | Last updated: 2026-04-18T07:26:35.174057+00:00*
