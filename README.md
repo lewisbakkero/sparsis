@@ -4,17 +4,19 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## 📚 Living Reviews
 
-- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-04-18
-- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 1 paper analysed | Last updated: 2026-04-18
-- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-04-18
-- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 2 papers analysed | Last updated: 2026-04-18
-- [Knowledge Representation And Reasoning](reviews/computing-methodologies/artificial-intelligence/knowledge-representation-and-reasoning.md) — 1 paper analysed | Last updated: 2026-04-18
-- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-04-18
-- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-04-18
-- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 1 paper analysed | Last updated: 2026-04-18
+- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-04-20
+- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 1 paper analysed | Last updated: 2026-04-20
+- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-04-20
+- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 2 papers analysed | Last updated: 2026-04-20
+- [Knowledge Representation And Reasoning](reviews/computing-methodologies/artificial-intelligence/knowledge-representation-and-reasoning.md) — 1 paper analysed | Last updated: 2026-04-20
+- [Molecular Simulation](reviews/computing-methodologies/modelling-and-simulation/molecular-simulation.md) — 1 paper analysed | Last updated: 2026-04-20
+- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-04-20
+- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-04-20
+- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 1 paper analysed | Last updated: 2026-04-20
 
 ## AI Applications
 
+- [ProAR: Probabilistic Autoregressive Modeling for Molecular Dynamics](2026-04-20/proar-probabilistic-autoregressive-modeling-for-molecular-dynamics.md) — AAAI, 2026-04-20
 - [DyC-STG: Dynamic Causal Spatio-Temporal Graph Network for Real-time Data Credibility Analysis in IoT](2026-04-18/dyc-stg-dynamic-causal-spatio-temporal-graph-network-for-real-time-data-credibil.md) — AAAI, 2026-04-18
 - [SIDE: Surrogate Conditional Data Extraction from Diffusion Models](2026-04-17/side-surrogate-conditional-data-extraction-from-diffusion-models.md) — AAAI, 2026-04-17
 - [TRACE: Transformation-Aware Graph Refinement for Reaction Condition Prediction](2026-04-16/trace-transformation-aware-graph-refinement-for-reaction-condition-prediction.md) — AAAI, 2026-04-16
@@ -34,4 +36,4 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ---
 
-*Last updated: 2026-04-18*
+*Last updated: 2026-04-20*
