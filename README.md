@@ -4,15 +4,16 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## 📚 Living Reviews
 
-- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-04-21
-- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 1 paper analysed | Last updated: 2026-04-21
-- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-04-21
-- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 2 papers analysed | Last updated: 2026-04-21
-- [Knowledge Representation And Reasoning](reviews/computing-methodologies/artificial-intelligence/knowledge-representation-and-reasoning.md) — 1 paper analysed | Last updated: 2026-04-21
-- [Molecular Simulation](reviews/computing-methodologies/modelling-and-simulation/molecular-simulation.md) — 1 paper analysed | Last updated: 2026-04-21
-- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-04-21
-- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-04-21
-- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 1 paper analysed | Last updated: 2026-04-21
+- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-04-22
+- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 1 paper analysed | Last updated: 2026-04-22
+- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-04-22
+- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 2 papers analysed | Last updated: 2026-04-22
+- [Knowledge Representation And Reasoning](reviews/computing-methodologies/artificial-intelligence/knowledge-representation-and-reasoning.md) — 1 paper analysed | Last updated: 2026-04-22
+- [Molecular Simulation](reviews/computing-methodologies/modelling-and-simulation/molecular-simulation.md) — 1 paper analysed | Last updated: 2026-04-22
+- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-04-22
+- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-04-22
+- [Text Classification](reviews/computing-methodologies/artificial-intelligence/text-classification.md) — 1 paper analysed | Last updated: 2026-04-22
+- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 2 papers analysed | Last updated: 2026-04-22
 
 ## AI Applications
 
@@ -36,8 +37,9 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## Uncategorized
 
+- [VFCionX: Bridging Large and Small Models for Robust Vulnerability-Fixing Commit Identification](2026-04-22/vfcionx-bridging-large-and-small-models-for-robust-vulnerability-fixing-commit-i.md) — AAAI, 2026-04-22
 - [Light but Sharp: SlimSTAD for Real-Time Action Detection from Sensor Data](2026-04-21/light-but-sharp-slimstad-for-real-time-action-detection-from-sensor-data.md) — AAAI, 2026-04-21
 
 ---
 
-*Last updated: 2026-04-21*
+*Last updated: 2026-04-22*
