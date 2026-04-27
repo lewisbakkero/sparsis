@@ -4,19 +4,21 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## 📚 Living Reviews
 
-- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-04-24
-- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 1 paper analysed | Last updated: 2026-04-24
-- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-04-24
-- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 2 papers analysed | Last updated: 2026-04-24
-- [Knowledge Representation And Reasoning](reviews/computing-methodologies/artificial-intelligence/knowledge-representation-and-reasoning.md) — 1 paper analysed | Last updated: 2026-04-24
-- [Misinformation And Fact Checking](reviews/information-systems/world-wide-web/misinformation-and-fact-checking.md) — 1 paper analysed | Last updated: 2026-04-24
-- [Molecular Simulation](reviews/computing-methodologies/modelling-and-simulation/molecular-simulation.md) — 1 paper analysed | Last updated: 2026-04-24
-- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-04-24
-- [Planning And Scheduling](reviews/computing-methodologies/artificial-intelligence/planning-and-scheduling.md) — 1 paper analysed | Last updated: 2026-04-24
-- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-04-24
-- [Search Methodologies](reviews/computing-methodologies/artificial-intelligence/search-methodologies.md) — 1 paper analysed | Last updated: 2026-04-24
-- [Text Classification](reviews/computing-methodologies/artificial-intelligence/text-classification.md) — 1 paper analysed | Last updated: 2026-04-24
-- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 2 papers analysed | Last updated: 2026-04-24
+- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-04-27
+- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 1 paper analysed | Last updated: 2026-04-27
+- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-04-27
+- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 2 papers analysed | Last updated: 2026-04-27
+- [Knowledge Representation And Reasoning](reviews/computing-methodologies/artificial-intelligence/knowledge-representation-and-reasoning.md) — 1 paper analysed | Last updated: 2026-04-27
+- [Materials Science](reviews/applied-computing/physical-sciences-and-engineering/materials-science.md) — 1 paper analysed | Last updated: 2026-04-27
+- [Misinformation And Fact Checking](reviews/information-systems/world-wide-web/misinformation-and-fact-checking.md) — 1 paper analysed | Last updated: 2026-04-27
+- [Molecular Simulation](reviews/computing-methodologies/modelling-and-simulation/molecular-simulation.md) — 1 paper analysed | Last updated: 2026-04-27
+- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-04-27
+- [Physics Informed Machine Learning](reviews/computing-methodologies/modelling-and-simulation/physics-informed-machine-learning.md) — 1 paper analysed | Last updated: 2026-04-27
+- [Planning And Scheduling](reviews/computing-methodologies/artificial-intelligence/planning-and-scheduling.md) — 1 paper analysed | Last updated: 2026-04-27
+- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-04-27
+- [Search Methodologies](reviews/computing-methodologies/artificial-intelligence/search-methodologies.md) — 1 paper analysed | Last updated: 2026-04-27
+- [Text Classification](reviews/computing-methodologies/artificial-intelligence/text-classification.md) — 1 paper analysed | Last updated: 2026-04-27
+- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 2 papers analysed | Last updated: 2026-04-27
 
 ## AI Applications
 
@@ -40,6 +42,7 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## Uncategorized
 
+- [DensiCrafter: Physically-Constrained Generation and Fabrication of Self-Supporting Hollow Structures](2026-04-27/densicrafter-physically-constrained-generation-and-fabrication-of-self-supportin.md) — AAAI, 2026-04-27
 - [Measuring What Matters: Scenario-Driven Evaluation for Trajectory Predictors in Autonomous Driving](2026-04-24/measuring-what-matters-scenario-driven-evaluation-for-trajectory-predictors-in-a.md) — AAAI, 2026-04-24
 - [T2Agent: A Tool-augmented Multimodal Misinformation Detection Agent with Monte Carlo Tree Search](2026-04-23/t2agent-a-tool-augmented-multimodal-misinformation-detection-agent-with-monte-ca.md) — AAAI, 2026-04-23
 - [VFCionX: Bridging Large and Small Models for Robust Vulnerability-Fixing Commit Identification](2026-04-22/vfcionx-bridging-large-and-small-models-for-robust-vulnerability-fixing-commit-i.md) — AAAI, 2026-04-22
@@ -47,4 +50,4 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ---
 
-*Last updated: 2026-04-24*
+*Last updated: 2026-04-27*
