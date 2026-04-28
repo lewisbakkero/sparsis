@@ -1,10 +1,10 @@
 # Living Review: Machine Learning: Graph Neural Networks
 
-> 📚 **Living review** — 2 papers analysed | Last updated: 2026-04-18
+> 📚 **Living review** — 3 papers analysed | Last updated: 2026-04-28
 > *This review is built incrementally as new papers are processed.*
 
 
-> 📚 **Living document** comprising 2 articles | Last refreshed: 2026-04-18
+> 📚 **Living document** comprising 3 articles | Last refreshed: 2026-04-28
 > *This review is built incrementally as new papers are processed. It is not a finished publication but a continuously evolving resource.*
 
 ## Introduction
@@ -25,7 +25,7 @@ Crucially, GNNs maintain the graph’s structural integrity during processing. U
 
 ## Taxonomy of Approaches
 
-The taxonomy of graph neural network approaches can be organized by their treatment of graph dynamics and causality. We identify four categories: static (fixed topology), dynamic (adapt to events), causal (enforce temporal precedence), and hybrid dynamic-causal (integrate both). Static models (e.g., GCN) assume unchanging graphs. Dynamic models update topology in real-time (e.g., DyC-STG’s event-driven module adapts to physical state changes in IoT sensors). Causal models distinguish true causality from spurious correlations (e.g., DyC-STG’s causal reasoning module strictly enforces temporal precedence). The hybrid category, exemplified by DyC-STG, achieves a state-of-the-art F1-score of 0.930 (1.4 points above baselines) on IoT data credibility analysis, directly addressing the two fundamental limitations of prior work: static topologies failing to capture dynamics, and spurious correlations undermining robustness in human-centric environments. This dual mechanism enables reliable real-time analysis where static or purely causal models would falter.
+The taxonomy of graph neural network approaches can be organized by their treatment of graph dynamics and structural enhancements. We identify five categories: static (fixed topology, e.g., GCN), dynamic (adapt to events, e.g., DyC-STG’s event-driven module for IoT sensors), causal (enforce temporal precedence, e.g., DyC-STG’s causal reasoning module), hybrid dynamic-causal (integrate both, e.g., DyC-STG), and **topology-enhanced static** (augment graph structure with similarity edges and model label correlations). The topology-enhanced static category, exemplified by TELC-PPI, specifically addresses two limitations of traditional static models: the failure to leverage functional similarity for representation smoothing (by constructing similarity edges between proteins with comparable label distributions and topological roles) and the inadequate modelling of interaction type dependencies (through label co-occurrence statistics in edge embedding learning). TELC-PPI achieves significant performance gains on multiple PPI datasets by resolving these issues without requiring dynamic topology updates or causal reasoning, demonstrating that structural enhancement and label correlation awareness can substantially improve prediction reliability in biological networks.
 
 ## Paper Analyses
 
@@ -65,22 +65,40 @@ Relationship to existing work: DyC-STG differs from TRACE (which refines graphs 
 
 A worked example: Imagine a kitchen sensor (Nk) and living room sensor (Nl). When the kitchen door closes (a control node event), DyC-STG’s dynamic graph *immediately* reduces the edge weight between Nk and Nl. Simultaneously, the causal module ensures the model interprets temperature drops at Nk *before* Nl as cause-and-effect (not correlation), preventing false alarms when a window opens in the living room. This dual mechanism—physical topology + causal attention—turns vague data credibility into a precise, interpretable signal.
 
+### Topology-Enhanced and Label Correlation-Aware Model for Protein-Protein Interaction Prediction
+
+Imagine a protein interaction map where two colleagues who both rely on the same coffee machine at work—sharing the same routine but never directly connected—are invisible to each other. This is precisely the challenge in protein-protein interaction (PPI) prediction: functionally similar proteins, like CYTH3 and PSD4 both interacting with ARF5 via the Sec7 domain (Figure 1a), remain disconnected in standard networks, violating the homophily assumption that underpins graph neural networks (GNNs). TELC-PPI tackles this by innovating in two dimensions: topology and label correlations.  
+
+The model’s core innovation lies in its topology enhancement module, which introduces the H2 Principle (two-hop similarity principle). Unlike prior methods that treat the PPI graph as fixed, TELC-PPI dynamically identifies hidden functional links. It begins by computing all two-hop paths (via common neighbours) in the original adjacency matrix *A*, yielding *A*². Subtracting *A* isolates indirect paths (e.g., CYTH3–ARF5–PSD4), then normalising to form a candidate edge matrix. Crucially, it filters these candidates using *semantic constraints*: for each protein, it aggregates local interaction labels (e.g., "activation" or "binding") into a distribution *pᵢ* (Equation 3). Only pairs with both sufficient shared neighbours and similar *pᵢ* distributions (e.g., CYTH3 and PSD4 both showing high "activation" rates with ARF5) get connected. This avoids noise by leveraging biological logic—proteins sharing interaction patterns with a common partner are likely functionally related.  
+
+Simultaneously, the label correlation-aware module addresses the overlooked dependency between interaction types. Instead of treating labels like "binding" or "catalysis" as independent (as in GNN-PPI or HIGH-PPI), TELC-PPI uses label co-occurrence statistics from the data. For instance, Figure 1b shows binding frequently co-occurs with reaction/catalysis; the module learns label embeddings by combining maximum likelihood loss with this co-occurrence data. During prediction, it computes the dot product between edge representations (from the enhanced topology) and label embeddings, enabling collaborative decisions—e.g., predicting "binding" informs the likelihood of "reaction."  
+
+The abstract confirms TELC-PPI achieves state-of-the-art results on standard PPI datasets (SHS27k, SHS148k, STRING) across multiple splits, but notably omits specific metrics like accuracy or F1 scores. This vagueness prevents quantifying its edge over predecessors: while the paper claims "significant" outperformance versus GNN-based baselines (e.g., GNN-PPI, MAPE-PPI), exact gains remain unspecified. The authors also don’t clarify computational overhead—though H2 edge construction uses efficient matrix operations (e.g., *A*²), adding edges to large graphs could strain scalability.  
+
+TELC-PPI’s true strength is its dual focus on *structure* and *semantics*, extending beyond the limitations of contemporary work. While CorGCN (for node classification) or CAMEL model label correlations, they overlook the edge-centric nature of PPI prediction. TELC-PPI adapts these concepts specifically for multi-label edge tasks—making it the first GNN model to explicitly bridge graph topology and label dependencies in PPI. Contrast this with DyC-STG (which handles causal relationships in IoT data) or TRACE (which refines graph structures for reaction prediction), TELC-PPI uniquely addresses *both* heterophily in the protein graph *and* cross-label dependencies.  
+
+Its limitations are transparent: without specific performance metrics, it’s unclear if gains are transformative or incremental. The H2 Principle also risks introducing noise if similarity thresholds are misaligned with biological context. Crucially, the paper doesn’t test TELC-PPI on newer, larger PPI datasets beyond the three cited, leaving scalability unverified.  
+
+In essence, TELC-PPI doesn’t just refine existing PPI prediction—it reimagines the graph as a living map where hidden connections and label synergies are *discovered*, not assumed. For researchers, this means moving beyond "what interactions occur" to "why they co-occur," turning a static graph into a dynamic guide for biological insight. As a next step, the community should replicate these results with explicit metrics and test scalability on evolving PPI databases like BioGRID.
+
 ## Comparative Overview
 
 | Paper | Year | Method Type | Key Innovation | Dataset/Scale | Main Result | Code |
 | --- | --- | --- | --- | --- | --- | --- |
 | TRACE | 2026 | Graph Refinement | Transformation-aware graph refinement via joint reactant-product graphs and dynamic edge inference | multiple benchmark datasets | state-of-the-art performance | https://github.com/chenyujie1127/TRACE |
 | DyC-STG | 2026 | Dynamic Causal STG Network | Event-driven dynamic graph adaptation and causal reasoning enforcing temporal precedence | Two new real-world IoT datasets (scale not specified) | 0.930 (F1-Score) | N/A |
+| TELCPPI | 2024 | Topology-Enhanced GNN | Constructs similarity edges via topological and label-based matching, and models label co-occurrence for embeddings | SHS27k, SHS148k, STRING | Significantly outperforms existing methods | https://github.com/dengbin151/TELC-PPI |
 
 ## Current Challenges and Open Problems
 
-The DyC-STG framework advances real-time IoT data credibility analysis by dynamically adapting graph topologies to physical events and enforcing causal reasoning through temporal precedence. However, critical challenges remain unaddressed. The abstract claims state-of-the-art F1-scores (0.930) but omits scalability metrics: it does not specify inference time relative to baselines or dataset sizes (e.g., number of nodes or time steps in the two released datasets), leaving open whether the approach scales to large, complex IoT networks. Crucially, while DyC-STG handles observed event dynamics, the paper provides no evidence of robustness to missing sensor data—a pervasive issue in IoT deployments—and does not test performance under data sparsity. The causal reasoning module relies solely on temporal precedence, yet the authors do not discuss handling latent confounders or non-linear event sequences common in human-centric environments, such as overlapping activities in smart homes. Finally, validation is limited to smart home scenarios; generalisation to domains like industrial IoT or healthcare remains unproven. Future work must quantify scalability, test robustness to missing data, and validate causal reasoning under confounding variables to enable broader adoption.
+The TELC-PPI model advances PPI prediction by integrating topological similarity for enhanced GNN smoothing and label correlation modelling to capture interaction type dependencies. However, critical challenges persist. The abstract reports significant improvements over baselines but omits scalability metrics, failing to specify inference time relative to network size (e.g., number of proteins or edges in tested datasets) or performance under large-scale biological networks. Crucially, the paper does not evaluate robustness to missing data or sparsity—pervasive in biological datasets—nor address extreme class imbalance where rare interaction types (e.g., catalysis) dominate training. Validation remains confined to specific organism datasets; generalisation to other biological contexts (e.g., human disease networks or dynamic PPIs under cellular conditions) is unverified. Additionally, the model’s static design does not account for evolving interaction networks, and no interpretability analysis explains how similarity edges or label correlations drive predictions. Future work must prioritise scalability benchmarks, robustness testing under data scarcity, and handling of imbalanced label distributions to enable practical deployment in diverse biological applications.
 
 ## Recommended Reading Path
 
-1. TRACE: Transformation-Aware Graph Refinement for Reaction Condition Prediction (AAAI) — teaches how to model chemical reactions as dynamic graphs where edges between reactants and products evolve based on molecular transformation rules, establishing foundational graph representation for reaction systems.  
-2. DyC-STG: Dynamic Causal Spatio-Temporal Graph Network for Real-time Data Credibility Analysis in IoT (AAAI) — builds on graph fundamentals to demonstrate how causal temporal reasoning enforces precedence constraints in real-time IoT data streams, extending graph dynamics to temporal credibility verification.
+1. TRACE offers a clear introduction to graph-based molecular reasoning by teaching how to construct basic joint reactant-product graphs for predicting chemical reactions, making it ideal for understanding foundational graph representation in chemistry.  
+2. DyC-STG builds on this by introducing event-driven dynamic graph adaptation that enforces causal temporal relationships, teaching how to model real-time changes in IoT data credibility without overcomplicating the core graph structure.  
+3. The topology-enhanced protein interaction model demonstrates advanced graph construction by teaching how to combine geometric topology with label co-occurrence patterns for predicting complex biological interactions, requiring prior grasp of graph refinement concepts.
 
 ---
 
-*Topic: Graph Neural Networks | Last updated: 2026-04-18T07:26:35.174057+00:00*
+*Topic: Graph Neural Networks | Last updated: 2026-04-28T07:19:07.653876+00:00*
