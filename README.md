@@ -4,24 +4,24 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## 📚 Living Reviews
 
-- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Bioinformatics](reviews/applied-computing/life-and-medical-sciences/bioinformatics.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-04-29
-- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 3 papers analysed | Last updated: 2026-04-29
-- [Information Extraction](reviews/computing-methodologies/artificial-intelligence/information-extraction.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Knowledge Representation And Reasoning](reviews/computing-methodologies/artificial-intelligence/knowledge-representation-and-reasoning.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Language Models](reviews/computing-methodologies/artificial-intelligence/language-models.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Materials Science](reviews/applied-computing/physical-sciences-and-engineering/materials-science.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Misinformation And Fact Checking](reviews/information-systems/world-wide-web/misinformation-and-fact-checking.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Molecular Simulation](reviews/computing-methodologies/modelling-and-simulation/molecular-simulation.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Physics Informed Machine Learning](reviews/computing-methodologies/modelling-and-simulation/physics-informed-machine-learning.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Planning And Scheduling](reviews/computing-methodologies/artificial-intelligence/planning-and-scheduling.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-04-29
-- [Search Methodologies](reviews/computing-methodologies/artificial-intelligence/search-methodologies.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Text Classification](reviews/computing-methodologies/artificial-intelligence/text-classification.md) — 1 paper analysed | Last updated: 2026-04-29
-- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 2 papers analysed | Last updated: 2026-04-29
+- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Bioinformatics](reviews/applied-computing/life-and-medical-sciences/bioinformatics.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-05-01
+- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 3 papers analysed | Last updated: 2026-05-01
+- [Information Extraction](reviews/computing-methodologies/artificial-intelligence/information-extraction.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Knowledge Representation And Reasoning](reviews/computing-methodologies/artificial-intelligence/knowledge-representation-and-reasoning.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Language Models](reviews/computing-methodologies/artificial-intelligence/language-models.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Materials Science](reviews/applied-computing/physical-sciences-and-engineering/materials-science.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Misinformation And Fact Checking](reviews/information-systems/world-wide-web/misinformation-and-fact-checking.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Molecular Simulation](reviews/computing-methodologies/modelling-and-simulation/molecular-simulation.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Physics Informed Machine Learning](reviews/computing-methodologies/modelling-and-simulation/physics-informed-machine-learning.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Planning And Scheduling](reviews/computing-methodologies/artificial-intelligence/planning-and-scheduling.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-05-01
+- [Search Methodologies](reviews/computing-methodologies/artificial-intelligence/search-methodologies.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Text Classification](reviews/computing-methodologies/artificial-intelligence/text-classification.md) — 1 paper analysed | Last updated: 2026-05-01
+- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 2 papers analysed | Last updated: 2026-05-01
 
 ## AI Applications
 
@@ -45,6 +45,16 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## Uncategorized
 
+- [3DAlign-DAER: Dynamic Attention Policy and Efficient Retrieval Strategy for Fine-grained 3D-Text Alignment at Scale](2026-05-01/3dalign-daer-dynamic-attention-policy-and-efficient-retrieval-strategy-for-fine.md) — AAAI, 2026-05-01
+- [CHASE: Contextual History for Adaptive and Simple Exploitation in Large Language Model Jailbreaking](2026-05-01/chase-contextual-history-for-adaptive-and-simple-exploitation-in-large-language.md) — AAAI, 2026-05-01
+- [RCAFlow: A Workflow-Informed Hierarchical Planning Multi-Agent System for Root Cause Analysis](2026-05-01/rcaflow-a-workflow-informed-hierarchical-planning-multi-agent-system-for-root-ca.md) — AAAI, 2026-05-01
+- [Failure Localization in Multi-Agent Code Generation via Knowledge-Guided and Transferable Reasoning](2026-05-01/failure-localization-in-multi-agent-code-generation-via-knowledge-guided-and-tra.md) — AAAI, 2026-05-01
+- [Unveiling the Attribute Misbinding Threat in Identity-Preserving Models](2026-05-01/unveiling-the-attribute-misbinding-threat-in-identity-preserving-models.md) — AAAI, 2026-05-01
+- [GARNET: GoT-Based Alert Reduction and Narrative Event Tracing](2026-05-01/garnet-got-based-alert-reduction-and-narrative-event-tracing.md) — AAAI, 2026-05-01
+- [Energy-based Autoregressive Generation for Neural Population Dynamics](2026-05-01/energy-based-autoregressive-generation-for-neural-population-dynamics.md) — AAAI, 2026-05-01
+- [From Stimuli to Minds: Enhancing Psychological Reasoning in LLMs via Bilateral Reinforcement Learning](2026-05-01/from-stimuli-to-minds-enhancing-psychological-reasoning-in-llms-via-bilateral-re.md) — AAAI, 2026-05-01
+- [DeepSenseMoE: Harnessing Power of Time Series Foundation Models for Few-Shot Human Activity Recognition](2026-05-01/deepsensemoe-harnessing-power-of-time-series-foundation-models-for-few-shot-huma.md) — AAAI, 2026-05-01
+- [From Passive Perception to Active Memory: A Weakly Supervised Image Manipulation Localization Framework Driven by Coarse-Grained Annotations](2026-05-01/from-passive-perception-to-active-memory-a-weakly-supervised-image-manipulation.md) — AAAI, 2026-05-01
 - [InteChar: A Unified Oracle Bone Character List for Ancient Chinese Language Modeling](2026-04-29/intechar-a-unified-oracle-bone-character-list-for-ancient-chinese-language-model.md) — AAAI, 2026-04-29
 - [Topology-Enhanced and Label Correlation-Aware Model for Protein-Protein Interaction Prediction](2026-04-28/topology-enhanced-and-label-correlation-aware-model-for-protein-protein-interact.md) — AAAI, 2026-04-28
 - [DensiCrafter: Physically-Constrained Generation and Fabrication of Self-Supporting Hollow Structures](2026-04-27/densicrafter-physically-constrained-generation-and-fabrication-of-self-supportin.md) — AAAI, 2026-04-27
@@ -55,4 +65,4 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ---
 
-*Last updated: 2026-04-29*
+*Last updated: 2026-05-01*
