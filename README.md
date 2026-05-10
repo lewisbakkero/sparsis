@@ -46,6 +46,36 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## Uncategorized
 
+- [Exploring Subnetwork Interactions in Heterogeneous Brain Network via Prior-Informed Graph Learning](2026-05-10/exploring-subnetwork-interactions-in-heterogeneous-brain-network-via-prior-infor.md) — arXiv cs.AI, 2026-05-10
+- [PAI: Fast, Accurate, and Full Benchmark Performance Projection with AI](2026-05-10/pai-fast-accurate-and-full-benchmark-performance-projection-with-ai.md) — Accurate, 2026-05-10
+- [Investigating In-Context Privacy Learning by Integrating User-Facing Privacy Tools into Conversational Agents](2026-05-10/investigating-in-context-privacy-learning-by-integrating-user-facing-privacy-too.md) — arXiv cs.AI, 2026-05-10
+- [Parameter-Efficient Token Embedding Editing for Clinical Class-Level Unlearning](2026-05-10/parameter-efficient-token-embedding-editing-for-clinical-class-level-unlearning.md) — arXiv cs.AI, 2026-05-10
+- [MemReward: Graph-Based Experience Memory for LLM Reward Prediction with Limited Labels](2026-05-10/memreward-graph-based-experience-memory-for-llm-reward-prediction-with-limited-l.md) — arXiv cs.AI, 2026-05-10
+- [A Novel Solution for Zero-Day Attack Detection in IDS using Self-Attention and Jensen-Shannon Divergence in WGAN-GP](2026-05-10/a-novel-solution-for-zero-day-attack-detection-in-ids-using-self-attention-and-j.md) — arXiv cs.AI, 2026-05-10
+- [Agreement Between Large Language Models, Human Reviewers, and Authors in Evaluating STROBE Checklists for Observational Studies in Rheumatology](2026-05-10/agreement-between-large-language-models-human-reviewers-and-authors-in-evaluatin.md) — Human Reviewers, 2026-05-10
+- [A Visualization for Comparative Analysis of Regression Models](2026-05-10/a-visualization-for-comparative-analysis-of-regression-models.md) — arXiv cs.AI, 2026-05-10
+- [The Autonomy Tax: Defense Training Breaks LLM Agents](2026-05-10/the-autonomy-tax-defense-training-breaks-llm-agents.md) — arXiv cs.AI, 2026-05-10
+- [Is Evaluation Awareness Just Format Sensitivity? Limitations of Probe-Based Evidence under Controlled Prompt Structure](2026-05-10/is-evaluation-awareness-just-format-sensitivity-limitations-of-probe-based-evide.md) — arXiv cs.AI, 2026-05-10
+- [Maximizing mutual information between user-contexts and responses improve LLM personalization with no additional data](2026-05-10/maximizing-mutual-information-between-user-contexts-and-responses-improve-llm-pe.md) — arXiv cs.AI, 2026-05-10
+- [Prompt-tuning with Attribute Guidance for Low-resource Entity Matching](2026-05-10/prompt-tuning-with-attribute-guidance-for-low-resource-entity-matching.md) — arXiv cs.AI, 2026-05-10
+- [Ternary Gamma Semirings: From Neural Implementation to Categorical Foundations](2026-05-10/ternary-gamma-semirings-from-neural-implementation-to-categorical-foundations.md) — arXiv cs.AI, 2026-05-10
+- [Beyond Weighted Summation: Learnable Nonlinear Aggregation Functions for Robust Artificial Neurons](2026-05-10/beyond-weighted-summation-learnable-nonlinear-aggregation-functions-for-robust-a.md) — arXiv cs.AI, 2026-05-10
+- [Memory-Driven Role-Playing: Evaluation and Enhancement of Persona Knowledge Utilization in LLMs](2026-05-10/memory-driven-role-playing-evaluation-and-enhancement-of-persona-knowledge-utili.md) — arXiv cs.AI, 2026-05-10
+- [Target Concept Tuning Improves Extreme Weather Forecasting](2026-05-10/target-concept-tuning-improves-extreme-weather-forecasting.md) — arXiv cs.AI, 2026-05-10
+- [Do Post-Training Algorithms Actually Differ? A Controlled Study Across Model Scales Uncovers Scale-Dependent Ranking Inversions](2026-05-10/do-post-training-algorithms-actually-differ-a-controlled-study-across-model-scal.md) — arXiv cs.AI, 2026-05-10
+- [Neural Dynamics Self-Attention for Spiking Transformers](2026-05-10/neural-dynamics-self-attention-for-spiking-transformers.md) — arXiv cs.AI, 2026-05-10
+- [VERDICT: Verifiable Evolving Reasoning with Directive-Informed Collegial Teams for Legal Judgment Prediction](2026-05-10/verdict-verifiable-evolving-reasoning-with-directive-informed-collegial-teams-fo.md) — arXiv cs.AI, 2026-05-10
+- [Spectral Tempering for Embedding Compression in Dense Passage Retrieval](2026-05-10/spectral-tempering-for-embedding-compression-in-dense-passage-retrieval.md) — arXiv cs.AI, 2026-05-10
+- [PhyGile: Physics-Prefix Guided Motion Generation for Agile General Humanoid Motion Tracking](2026-05-10/phygile-physics-prefix-guided-motion-generation-for-agile-general-humanoid-motio.md) — arXiv cs.AI, 2026-05-10
+- [Diffusion-Guided Semantic Consistency for Multimodal Heterogeneity](2026-05-10/diffusion-guided-semantic-consistency-for-multimodal-heterogeneity.md) — arXiv cs.AI, 2026-05-10
+- [POET: Power-Oriented Evolutionary Tuning for LLM-Based RTL PPA Optimization](2026-05-10/poet-power-oriented-evolutionary-tuning-for-llm-based-rtl-ppa-optimization.md) — arXiv cs.AI, 2026-05-10
+- [Goedel-Code-Prover: Hierarchical Proof Search for Open State-of-the-Art Code Verification](2026-05-10/goedel-code-prover-hierarchical-proof-search-for-open-state-of-the-art-code-veri.md) — arXiv cs.AI, 2026-05-10
+- [A General Deep Learning Framework for Wireless Resource Allocation under Discrete Constraints](2026-05-10/a-general-deep-learning-framework-for-wireless-resource-allocation-under-discret.md) — arXiv cs.AI, 2026-05-10
+- [LLM-MRD: LLM-Guided Multi-View Reasoning Distillation for Fake News Detection](2026-05-10/llm-mrd-llm-guided-multi-view-reasoning-distillation-for-fake-news-detection.md) — arXiv cs.AI, 2026-05-10
+- [Automatic Analysis of Collaboration Through Human Conversational Data Resources: A Review](2026-05-10/automatic-analysis-of-collaboration-through-human-conversational-data-resources.md) — arXiv cs.AI, 2026-05-10
+- [GT-Space: Enhancing Heterogeneous Collaborative Perception with Ground Truth Feature Space](2026-05-10/gt-space-enhancing-heterogeneous-collaborative-perception-with-ground-truth-feat.md) — arXiv cs.AI, 2026-05-10
+- [Scalable Prompt Routing via Fine-Grained Latent Task Discovery](2026-05-10/scalable-prompt-routing-via-fine-grained-latent-task-discovery.md) — arXiv cs.AI, 2026-05-10
+- [LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels](2026-05-10/leworldmodel-stable-end-to-end-joint-embedding-predictive-architecture-from-pixe.md) — arXiv cs.AI, 2026-05-10
 - [Accelerating Triangle Counting with Real Processing-in-Memory Systems](2026-05-09/accelerating-triangle-counting-with-real-processing-in-memory-systems.md) — arXiv cs.DC, 2026-05-09
 - [Advanced Scheduling Strategies for Distributed Quantum Computing Jobs](2026-05-09/advanced-scheduling-strategies-for-distributed-quantum-computing-jobs.md) — arXiv cs.DC, 2026-05-09
 - [OpenDC-STEAM: Realistic Modeling and Systematic Exploration of Composable Techniques for Sustainable Datacenters](2026-05-09/opendc-steam-realistic-modeling-and-systematic-exploration-of-composable-techniq.md) — arXiv cs.DC, 2026-05-09
