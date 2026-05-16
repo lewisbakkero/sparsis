@@ -96,6 +96,55 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 - [HiPath: Hierarchical Vision-Language Alignment for Structured Pathology Report Prediction](2026-05-16/hipath-hierarchical-vision-language-alignment-for-structured-pathology-report-pr.md) — arXiv cs.AI, 2026-05-16
 - [FedRG: Unleashing the Representation Geometry for Federated Learning with Noisy Clients](2026-05-16/fedrg-unleashing-the-representation-geometry-for-federated-learning-with-noisy-c.md) — arXiv cs.AI, 2026-05-16
 - [The End of Rented Discovery: How AI Search Redistributes Power Between Hotels and Intermediaries](2026-05-16/the-end-of-rented-discovery-how-ai-search-redistributes-power-between-hotels-and.md) — arXiv cs.AI, 2026-05-16
+- [Adaptive Greedy Frame Selection for Long Video Understanding](2026-05-16/adaptive-greedy-frame-selection-for-long-video-understanding.md) — arXiv cs.AI, 2026-05-16
+- [Agentic Business Process Management: A Research Manifesto](2026-05-16/agentic-business-process-management-a-research-manifesto.md) — arXiv cs.AI, 2026-05-16
+- [Mapping Caregiver Needs to AI Chatbot Design: Strengths and Gaps in Mental Health Support for Alzheimer's and Dementia Caregivers](2026-05-16/mapping-caregiver-needs-to-ai-chatbot-design-strengths-and-gaps-in-mental-health.md) — arXiv cs.AI, 2026-05-16
+- [LISAA: A Framework for Large Language Model Information Security Awareness Assessment](2026-05-16/lisaa-a-framework-for-large-language-model-information-security-awareness-assess.md) — arXiv cs.AI, 2026-05-16
+- [Generative AI-assisted Participatory Modeling in Socio-Environmental Planning under Deep Uncertainty](2026-05-16/generative-ai-assisted-participatory-modeling-in-socio-environmental-planning-un.md) — arXiv cs.AI, 2026-05-16
+- [Sensing Without Colocation: Operator-Based Virtual Instrumentation for Domains Beyond Physical Reach](2026-05-16/sensing-without-colocation-operator-based-virtual-instrumentation-for-domains-be.md) — arXiv cs.AI, 2026-05-16
+- [RobotArena $\infty$: Scalable Robot Benchmarking via Real-to-Sim Translation](2026-05-16/robotarena-infty-scalable-robot-benchmarking-via-real-to-sim-translation.md) — arXiv cs.AI, 2026-05-16
+- [FORWARD: Dataset of a forwarder operating in rough terrain](2026-05-16/forward-dataset-of-a-forwarder-operating-in-rough-terrain.md) — arXiv cs.AI, 2026-05-16
+- [HPS: Hard Preference Sampling for Human Preference Alignment](2026-05-16/hps-hard-preference-sampling-for-human-preference-alignment.md) — arXiv cs.AI, 2026-05-16
+- [Semantic-Driven Topic Modeling for Analyzing Creativity in Virtual Brainstorming](2026-05-16/semantic-driven-topic-modeling-for-analyzing-creativity-in-virtual-brainstorming.md) — arXiv cs.AI, 2026-05-16
+- [Average Reward Reinforcement Learning for Omega-Regular and Mean-Payoff Objectives](2026-05-16/average-reward-reinforcement-learning-for-omega-regular-and-mean-payoff-objectiv.md) — arXiv cs.AI, 2026-05-16
+- [From Masks to Pixels and Meaning: A New Taxonomy, Benchmark, and Metrics for VLM Image Tampering](2026-05-16/from-masks-to-pixels-and-meaning-a-new-taxonomy-benchmark-and-metrics-for-vlm-im.md) — Benchmark, 2026-05-16
+- [A Unified Framework to Quantify Cultural Intelligence of AI](2026-05-16/a-unified-framework-to-quantify-cultural-intelligence-of-ai.md) — arXiv cs.AI, 2026-05-16
+- [Responsible AI Technical Report](2026-05-16/responsible-ai-technical-report.md) — arXiv cs.AI, 2026-05-16
+- [FinReflectKG -- EvalBench: Benchmarking Financial KG with Multi-Dimensional Evaluation](2026-05-16/finreflectkg-evalbench-benchmarking-financial-kg-with-multi-dimensional-evaluati.md) — arXiv cs.AI, 2026-05-16
+- [Multimodal Fused Learning for Solving the Generalized Traveling Salesman Problem in Robotic Task Planning](2026-05-16/multimodal-fused-learning-for-solving-the-generalized-traveling-salesman-problem.md) — arXiv cs.AI, 2026-05-16
+- [Improving Generalization on Cybersecurity Tasks with Multi-Modal Contrastive Learning](2026-05-16/improving-generalization-on-cybersecurity-tasks-with-multi-modal-contrastive-lea.md) — arXiv cs.AI, 2026-05-16
+- [Evaluating Game Difficulty in Tetris Block Puzzle](2026-05-16/evaluating-game-difficulty-in-tetris-block-puzzle.md) — arXiv cs.AI, 2026-05-16
+- [Superclass-Guided Representation Disentanglement for Spurious Correlation Mitigation](2026-05-16/superclass-guided-representation-disentanglement-for-spurious-correlation-mitiga.md) — arXiv cs.AI, 2026-05-16
+- [The Phish, The Spam, and The Valid: Generating Feature-Rich Emails for Benchmarking LLMs](2026-05-16/the-phish-the-spam-and-the-valid-generating-feature-rich-emails-for-benchmarking.md) — The Spam, 2026-05-16
+- [VSSFlow: Unifying Video-conditioned Sound and Speech Generation via Joint Learning](2026-05-16/vssflow-unifying-video-conditioned-sound-and-speech-generation-via-joint-learnin.md) — arXiv cs.AI, 2026-05-16
+- [AI Agents Can Already Autonomously Perform Experimental High Energy Physics](2026-05-16/ai-agents-can-already-autonomously-perform-experimental-high-energy-physics.md) — arXiv cs.AI, 2026-05-16
+- [Adaptive Relative Pose Estimation Framework with Dual Noise Tuning for Safe Approaching Maneuvers](2026-05-16/adaptive-relative-pose-estimation-framework-with-dual-noise-tuning-for-safe-appr.md) — arXiv cs.AI, 2026-05-16
+- [Preference-Driven Multi-Objective Combinatorial Optimization with Conditional Computation](2026-05-16/preference-driven-multi-objective-combinatorial-optimization-with-conditional-co.md) — arXiv cs.AI, 2026-05-16
+- [HALO: Hierarchical Reinforcement Learning for Large-Scale Adaptive Traffic Signal Control](2026-05-16/halo-hierarchical-reinforcement-learning-for-large-scale-adaptive-traffic-signal.md) — arXiv cs.AI, 2026-05-16
+- [Community-Informed AI Models for Police Accountability](2026-05-16/community-informed-ai-models-for-police-accountability.md) — arXiv cs.AI, 2026-05-16
+- [Cross-site scripting adversarial attacks based on deep reinforcement learning: Evaluation and extension study](2026-05-16/cross-site-scripting-adversarial-attacks-based-on-deep-reinforcement-learning-ev.md) — arXiv cs.AI, 2026-05-16
+- [3D-Consistent Multi-View Editing by Correspondence Guidance](2026-05-16/3d-consistent-multi-view-editing-by-correspondence-guidance.md) — arXiv cs.AI, 2026-05-16
+- [PDDL Axioms Are Equivalent to Least Fixed Point Logic (Extended Version)](2026-05-16/pddl-axioms-are-equivalent-to-least-fixed-point-logic-extended-version.md) — arXiv cs.AI, 2026-05-16
+- [Pseudo-Simulation for Autonomous Driving](2026-05-16/pseudo-simulation-for-autonomous-driving.md) — arXiv cs.AI, 2026-05-16
+- [On Sample-Efficient Generalized Planning via Learned Transition Models](2026-05-16/on-sample-efficient-generalized-planning-via-learned-transition-models.md) — arXiv cs.AI, 2026-05-16
+- [Rep2Text: Decoding Full Text from a Single LLM Token Representation](2026-05-16/rep2text-decoding-full-text-from-a-single-llm-token-representation.md) — arXiv cs.AI, 2026-05-16
+- [Semantic Token Clustering for Efficient Uncertainty Quantification in Large Language Models](2026-05-16/semantic-token-clustering-for-efficient-uncertainty-quantification-in-large-lang.md) — arXiv cs.AI, 2026-05-16
+- [VideoSeek: Long-Horizon Video Agent with Tool-Guided Seeking](2026-05-16/videoseek-long-horizon-video-agent-with-tool-guided-seeking.md) — arXiv cs.AI, 2026-05-16
+- [Evaluation-Aware Reinforcement Learning](2026-05-16/evaluation-aware-reinforcement-learning.md) — arXiv cs.AI, 2026-05-16
+- [RealUnify: Do Unified Models Truly Benefit from Unification? A Comprehensive Benchmark](2026-05-16/realunify-do-unified-models-truly-benefit-from-unification-a-comprehensive-bench.md) — arXiv cs.AI, 2026-05-16
+- [Auditing Google's AI Overviews and Featured Snippets: A Case Study on Baby Care and Pregnancy](2026-05-16/auditing-googles-ai-overviews-and-featured-snippets-a-case-study-on-baby-care-an.md) — arXiv cs.AI, 2026-05-16
+- [World4RL: Diffusion World Models for Policy Refinement with Reinforcement Learning for Robotic Manipulation](2026-05-16/world4rl-diffusion-world-models-for-policy-refinement-with-reinforcement-learnin.md) — arXiv cs.AI, 2026-05-16
+- [TempPerturb-Eval: On the Joint Effects of Internal Temperature and External Perturbations in RAG Robustness](2026-05-16/tempperturb-eval-on-the-joint-effects-of-internal-temperature-and-external-pertu.md) — arXiv cs.AI, 2026-05-16
+- [DEAF: A Benchmark for Diagnostic Evaluation of Acoustic Faithfulness in Audio Language Models](2026-05-16/deaf-a-benchmark-for-diagnostic-evaluation-of-acoustic-faithfulness-in-audio-lan.md) — arXiv cs.AI, 2026-05-16
+- [A Comprehensive Survey on Vector Database: Storage and Retrieval Technique, Challenge](2026-05-16/a-comprehensive-survey-on-vector-database-storage-and-retrieval-technique-challe.md) — Challenge, 2026-05-16
+- [DAPS++: Rethinking Diffusion Inverse Problems with Decoupled Posterior Annealing](2026-05-16/daps-rethinking-diffusion-inverse-problems-with-decoupled-posterior-annealing.md) — arXiv cs.AI, 2026-05-16
+- [VIRO: Robust and Efficient Neuro-Symbolic Reasoning with Verification for Referring Expression Comprehension](2026-05-16/viro-robust-and-efficient-neuro-symbolic-reasoning-with-verification-for-referri.md) — arXiv cs.AI, 2026-05-16
+- [Improved Generalized Planning with LLMs through Strategy Refinement and Reflection](2026-05-16/improved-generalized-planning-with-llms-through-strategy-refinement-and-reflecti.md) — arXiv cs.AI, 2026-05-16
+- [LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation](2026-05-16/lumosx-relate-any-identities-with-their-attributes-for-personalized-video-genera.md) — arXiv cs.AI, 2026-05-16
+- [Measuring Faithfulness Depends on How You Measure: Classifier Sensitivity in LLM Chain-of-Thought Evaluation](2026-05-16/measuring-faithfulness-depends-on-how-you-measure-classifier-sensitivity-in-llm.md) — arXiv cs.AI, 2026-05-16
+- [CARES: Context-Aware Resolution Selector for VLMs](2026-05-16/cares-context-aware-resolution-selector-for-vlms.md) — arXiv cs.AI, 2026-05-16
+- [The Robot's Inner Critic: Self-Refinement of Social Behaviors through VLM-based Replanning](2026-05-16/the-robots-inner-critic-self-refinement-of-social-behaviors-through-vlm-based-re.md) — arXiv cs.AI, 2026-05-16
+- [Unmasking Algorithmic Bias in Predictive Policing: A GAN-Based Simulation Framework with Multi-City Temporal Analysis](2026-05-16/unmasking-algorithmic-bias-in-predictive-policing-a-gan-based-simulation-framewo.md) — arXiv cs.AI, 2026-05-16
 - [DeepStock: Reinforcement Learning with Policy Regularizations for Inventory Management](2026-05-15/deepstock-reinforcement-learning-with-policy-regularizations-for-inventory-manag.md) — arXiv cs.AI, 2026-05-15
 - [A Framework for Formalizing LLM Agent Security](2026-05-15/a-framework-for-formalizing-llm-agent-security.md) — arXiv cs.AI, 2026-05-15
 - [TRACE: Trajectory Recovery with State Propagation Diffusion for Urban Mobility](2026-05-15/trace-trajectory-recovery-with-state-propagation-diffusion-for-urban-mobility.md) — arXiv cs.AI, 2026-05-15
