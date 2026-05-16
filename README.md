@@ -4,25 +4,25 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## 📚 Living Reviews
 
-- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Bioinformatics](reviews/applied-computing/life-and-medical-sciences/bioinformatics.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 2 papers analysed | Last updated: 2026-05-15
-- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-05-15
-- [Drug Discovery](reviews/applied-computing/life-and-medical-sciences/drug-discovery.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 3 papers analysed | Last updated: 2026-05-15
-- [Information Extraction](reviews/computing-methodologies/artificial-intelligence/information-extraction.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Knowledge Representation And Reasoning](reviews/computing-methodologies/artificial-intelligence/knowledge-representation-and-reasoning.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Language Models](reviews/computing-methodologies/artificial-intelligence/language-models.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Materials Science](reviews/applied-computing/physical-sciences-and-engineering/materials-science.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Misinformation And Fact Checking](reviews/information-systems/world-wide-web/misinformation-and-fact-checking.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Molecular Simulation](reviews/computing-methodologies/modelling-and-simulation/molecular-simulation.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Physics Informed Machine Learning](reviews/computing-methodologies/modelling-and-simulation/physics-informed-machine-learning.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Planning And Scheduling](reviews/computing-methodologies/artificial-intelligence/planning-and-scheduling.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-05-15
-- [Search Methodologies](reviews/computing-methodologies/artificial-intelligence/search-methodologies.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Text Classification](reviews/computing-methodologies/artificial-intelligence/text-classification.md) — 1 paper analysed | Last updated: 2026-05-15
-- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 2 papers analysed | Last updated: 2026-05-15
+- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Bioinformatics](reviews/applied-computing/life-and-medical-sciences/bioinformatics.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 2 papers analysed | Last updated: 2026-05-16
+- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-05-16
+- [Drug Discovery](reviews/applied-computing/life-and-medical-sciences/drug-discovery.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 3 papers analysed | Last updated: 2026-05-16
+- [Information Extraction](reviews/computing-methodologies/artificial-intelligence/information-extraction.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Knowledge Representation And Reasoning](reviews/computing-methodologies/artificial-intelligence/knowledge-representation-and-reasoning.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Language Models](reviews/computing-methodologies/artificial-intelligence/language-models.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Materials Science](reviews/applied-computing/physical-sciences-and-engineering/materials-science.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Misinformation And Fact Checking](reviews/information-systems/world-wide-web/misinformation-and-fact-checking.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Molecular Simulation](reviews/computing-methodologies/modelling-and-simulation/molecular-simulation.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Physics Informed Machine Learning](reviews/computing-methodologies/modelling-and-simulation/physics-informed-machine-learning.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Planning And Scheduling](reviews/computing-methodologies/artificial-intelligence/planning-and-scheduling.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-05-16
+- [Search Methodologies](reviews/computing-methodologies/artificial-intelligence/search-methodologies.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Text Classification](reviews/computing-methodologies/artificial-intelligence/text-classification.md) — 1 paper analysed | Last updated: 2026-05-16
+- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 2 papers analysed | Last updated: 2026-05-16
 
 ## AI Applications
 
@@ -46,6 +46,56 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## Uncategorized
 
+- [Promoting Critical Thinking With Domain-Specific Generative AI Provocations](2026-05-16/promoting-critical-thinking-with-domain-specific-generative-ai-provocations.md) — arXiv cs.AI, 2026-05-16
+- [Breaking the Capability Ceiling of LLM Post-Training by Reintroducing Markov States](2026-05-16/breaking-the-capability-ceiling-of-llm-post-training-by-reintroducing-markov-sta.md) — arXiv cs.AI, 2026-05-16
+- [OmniDiT: Extending Diffusion Transformer to Omni-VTON Framework](2026-05-16/omnidit-extending-diffusion-transformer-to-omni-vton-framework.md) — arXiv cs.AI, 2026-05-16
+- [FrameNet Semantic Role Classification by Analogy](2026-05-16/framenet-semantic-role-classification-by-analogy.md) — arXiv cs.AI, 2026-05-16
+- [Agentic Harness for Real-World Compilers](2026-05-16/agentic-harness-for-real-world-compilers.md) — arXiv cs.AI, 2026-05-16
+- [Var-JEPA: A Variational Formulation of the Joint-Embedding Predictive Architecture -- Bridging Predictive and Generative Self-Supervised Learning](2026-05-16/var-jepa-a-variational-formulation-of-the-joint-embedding-predictive-architectur.md) — arXiv cs.AI, 2026-05-16
+- [Integrating Meta-Features with Knowledge Graph Embeddings for Meta-Learning](2026-05-16/integrating-meta-features-with-knowledge-graph-embeddings-for-meta-learning.md) — arXiv cs.AI, 2026-05-16
+- [CoverageBench: Evaluating Information Coverage across Tasks and Domains](2026-05-16/coveragebench-evaluating-information-coverage-across-tasks-and-domains.md) — arXiv cs.AI, 2026-05-16
+- [Design-OS: A Specification-Driven Framework for Engineering System Design with a Control-Systems Design Case](2026-05-16/design-os-a-specification-driven-framework-for-engineering-system-design-with-a.md) — arXiv cs.AI, 2026-05-16
+- [LoASR-Bench: Evaluating Large Speech Language Models on Low-Resource Automatic Speech Recognition Across Language Families](2026-05-16/loasr-bench-evaluating-large-speech-language-models-on-low-resource-automatic-sp.md) — arXiv cs.AI, 2026-05-16
+- [What If Consensus Lies? Selective-Complementary Reinforcement Learning at Test Time](2026-05-16/what-if-consensus-lies-selective-complementary-reinforcement-learning-at-test-ti.md) — arXiv cs.AI, 2026-05-16
+- [Physics-Informed Long-Range Coulomb Correction for Machine-learning Hamiltonians](2026-05-16/physics-informed-long-range-coulomb-correction-for-machine-learning-hamiltonians.md) — arXiv cs.AI, 2026-05-16
+- [An Agentic Multi-Agent Architecture for Cybersecurity Risk Management](2026-05-16/an-agentic-multi-agent-architecture-for-cybersecurity-risk-management.md) — arXiv cs.AI, 2026-05-16
+- [Detached Skip-Links and $R$-Probe: Decoupling Feature Aggregation from Gradient Propagation for MLLM OCR](2026-05-16/detached-skip-links-and-r-probe-decoupling-feature-aggregation-from-gradient-pro.md) — arXiv cs.AI, 2026-05-16
+- [Spectral Alignment in Forward-Backward Representations via Temporal Abstraction](2026-05-16/spectral-alignment-in-forward-backward-representations-via-temporal-abstraction.md) — arXiv cs.AI, 2026-05-16
+- [Offshore oil and gas platform dynamics in the North Sea, Gulf of Mexico, and Persian Gulf: Exploiting the Sentinel-1 archive](2026-05-16/offshore-oil-and-gas-platform-dynamics-in-the-north-sea-gulf-of-mexico-and-persi.md) — Gulf of Mexico, 2026-05-16
+- [Graph2TS: Structure-Controlled Time Series Generation via Quantile-Graph VAEs](2026-05-16/graph2ts-structure-controlled-time-series-generation-via-quantile-graph-vaes.md) — arXiv cs.AI, 2026-05-16
+- [ATHENA: Adaptive Test-Time Steering for Improving Count Fidelity in Diffusion Models](2026-05-16/athena-adaptive-test-time-steering-for-improving-count-fidelity-in-diffusion-mod.md) — arXiv cs.AI, 2026-05-16
+- [Learning Like Humans: Analogical Concept Learning for Generalized Category Discovery](2026-05-16/learning-like-humans-analogical-concept-learning-for-generalized-category-discov.md) — arXiv cs.AI, 2026-05-16
+- [Enhancing Hyperspace Analogue to Language (HAL) Representations via Attention-Based Pooling for Text Classification](2026-05-16/enhancing-hyperspace-analogue-to-language-hal-representations-via-attention-base.md) — arXiv cs.AI, 2026-05-16
+- [Learning Hierarchical Orthogonal Prototypes for Generalized Few-Shot 3D Point Cloud Segmentation](2026-05-16/learning-hierarchical-orthogonal-prototypes-for-generalized-few-shot-3d-point-cl.md) — arXiv cs.AI, 2026-05-16
+- [MOSS-TTSD: Text to Spoken Dialogue Generation](2026-05-16/moss-ttsd-text-to-spoken-dialogue-generation.md) — arXiv cs.AI, 2026-05-16
+- [Uncertainty-aware Prototype Learning with Variational Inference for Few-shot Point Cloud Segmentation](2026-05-16/uncertainty-aware-prototype-learning-with-variational-inference-for-few-shot-poi.md) — arXiv cs.AI, 2026-05-16
+- [Semantic Delta: An Interpretable Signal Differentiating Human and LLMs Dialogue](2026-05-16/semantic-delta-an-interpretable-signal-differentiating-human-and-llms-dialogue.md) — arXiv cs.AI, 2026-05-16
+- [Orchestrating Human-AI Software Delivery: A Retrospective Longitudinal Field Study of Three Software Modernization Programs](2026-05-16/orchestrating-human-ai-software-delivery-a-retrospective-longitudinal-field-stud.md) — arXiv cs.AI, 2026-05-16
+- [Failure Modes for Deep Learning-Based Online Mapping: How to Measure and Address Them](2026-05-16/failure-modes-for-deep-learning-based-online-mapping-how-to-measure-and-address.md) — arXiv cs.AI, 2026-05-16
+- [MetaCues: Enabling Critical Engagement with Generative AI for Information Seeking and Sensemaking](2026-05-16/metacues-enabling-critical-engagement-with-generative-ai-for-information-seeking.md) — arXiv cs.AI, 2026-05-16
+- [LLM-Enhanced Semantic Data Integration of Electronic Component Qualifications in the Aerospace Domain](2026-05-16/llm-enhanced-semantic-data-integration-of-electronic-component-qualifications-in.md) — arXiv cs.AI, 2026-05-16
+- [Dual Prompt-Driven Feature Encoding for Nighttime UAV Tracking](2026-05-16/dual-prompt-driven-feature-encoding-for-nighttime-uav-tracking.md) — arXiv cs.AI, 2026-05-16
+- [The $\mathbf{Y}$-Combinator for LLMs: Solving Long-Context Rot with $λ$-Calculus](2026-05-16/the-mathbfy-combinator-for-llms-solving-long-context-rot-with-calculus.md) — arXiv cs.AI, 2026-05-16
+- [Gesture2Speech: How Far Can Hand Movements Shape Expressive Speech?](2026-05-16/gesture2speech-how-far-can-hand-movements-shape-expressive-speech.md) — arXiv cs.AI, 2026-05-16
+- [Fine-tuning Timeseries Predictors Using Reinforcement Learning](2026-05-16/fine-tuning-timeseries-predictors-using-reinforcement-learning.md) — arXiv cs.AI, 2026-05-16
+- [AIGQ: An End-to-End Hybrid Generative Architecture for E-commerce Query Recommendation](2026-05-16/aigq-an-end-to-end-hybrid-generative-architecture-for-e-commerce-query-recommend.md) — arXiv cs.AI, 2026-05-16
+- [Chain-of-Adaptation: Surgical Vision-Language Adaptation with Reinforcement Learning](2026-05-16/chain-of-adaptation-surgical-vision-language-adaptation-with-reinforcement-learn.md) — arXiv cs.AI, 2026-05-16
+- [GoAgent: Group-of-Agents Communication Topology Generation for LLM-based Multi-Agent Systems](2026-05-16/goagent-group-of-agents-communication-topology-generation-for-llm-based-multi-ag.md) — arXiv cs.AI, 2026-05-16
+- [PolicySim: An LLM-Based Agent Social Simulation Sandbox for Proactive Policy Optimization](2026-05-16/policysim-an-llm-based-agent-social-simulation-sandbox-for-proactive-policy-opti.md) — arXiv cs.AI, 2026-05-16
+- [RAM: Recover Any 3D Human Motion in-the-Wild](2026-05-16/ram-recover-any-3d-human-motion-in-the-wild.md) — arXiv cs.AI, 2026-05-16
+- [Demonstration of Adapt4Me: An Uncertainty-Aware Authoring Environment for Personalizing Automatic Speech Recognition to Non-normative Speech](2026-05-16/demonstration-of-adapt4me-an-uncertainty-aware-authoring-environment-for-persona.md) — arXiv cs.AI, 2026-05-16
+- [Span-Level Machine Translation Meta-Evaluation](2026-05-16/span-level-machine-translation-meta-evaluation.md) — arXiv cs.AI, 2026-05-16
+- [The Residual Stream Is All You Need: On the Redundancy of the KV Cache in Transformer Inference](2026-05-16/the-residual-stream-is-all-you-need-on-the-redundancy-of-the-kv-cache-in-transfo.md) — arXiv cs.AI, 2026-05-16
+- [Enhancing Alignment for Unified Multimodal Models via Semantically-Grounded Supervision](2026-05-16/enhancing-alignment-for-unified-multimodal-models-via-semantically-grounded-supe.md) — arXiv cs.AI, 2026-05-16
+- [X-World: Controllable Ego-Centric Multi-Camera World Models for Scalable End-to-End Driving](2026-05-16/x-world-controllable-ego-centric-multi-camera-world-models-for-scalable-end-to-e.md) — arXiv cs.AI, 2026-05-16
+- [Evolving Jailbreaks: Automated Multi-Objective Long-Tail Attacks on Large Language Models](2026-05-16/evolving-jailbreaks-automated-multi-objective-long-tail-attacks-on-large-languag.md) — arXiv cs.AI, 2026-05-16
+- [An Empirical Study of SFT-DPO Interaction and Parameterization in Small Language Models](2026-05-16/an-empirical-study-of-sft-dpo-interaction-and-parameterization-in-small-language.md) — arXiv cs.AI, 2026-05-16
+- [Trojan's Whisper: Stealthy Manipulation of OpenClaw through Injected Bootstrapped Guidance](2026-05-16/trojans-whisper-stealthy-manipulation-of-openclaw-through-injected-bootstrapped.md) — arXiv cs.AI, 2026-05-16
+- [Toward High-Fidelity Visual Reconstruction: From EEG-Based Conditioned Generation to Joint-Modal Guided Rebuilding](2026-05-16/toward-high-fidelity-visual-reconstruction-from-eeg-based-conditioned-generation.md) — arXiv cs.AI, 2026-05-16
+- [Revealing Domain-Spatiality Patterns for Configuration Tuning: Domain Knowledge Meets Fitness Landscapes](2026-05-16/revealing-domain-spatiality-patterns-for-configuration-tuning-domain-knowledge-m.md) — arXiv cs.AI, 2026-05-16
+- [HiPath: Hierarchical Vision-Language Alignment for Structured Pathology Report Prediction](2026-05-16/hipath-hierarchical-vision-language-alignment-for-structured-pathology-report-pr.md) — arXiv cs.AI, 2026-05-16
+- [FedRG: Unleashing the Representation Geometry for Federated Learning with Noisy Clients](2026-05-16/fedrg-unleashing-the-representation-geometry-for-federated-learning-with-noisy-c.md) — arXiv cs.AI, 2026-05-16
+- [The End of Rented Discovery: How AI Search Redistributes Power Between Hotels and Intermediaries](2026-05-16/the-end-of-rented-discovery-how-ai-search-redistributes-power-between-hotels-and.md) — arXiv cs.AI, 2026-05-16
 - [DeepStock: Reinforcement Learning with Policy Regularizations for Inventory Management](2026-05-15/deepstock-reinforcement-learning-with-policy-regularizations-for-inventory-manag.md) — arXiv cs.AI, 2026-05-15
 - [A Framework for Formalizing LLM Agent Security](2026-05-15/a-framework-for-formalizing-llm-agent-security.md) — arXiv cs.AI, 2026-05-15
 - [TRACE: Trajectory Recovery with State Propagation Diffusion for Urban Mobility](2026-05-15/trace-trajectory-recovery-with-state-propagation-diffusion-for-urban-mobility.md) — arXiv cs.AI, 2026-05-15
@@ -203,4 +253,4 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ---
 
-*Last updated: 2026-05-15*
+*Last updated: 2026-05-16*
