@@ -145,6 +145,55 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 - [CARES: Context-Aware Resolution Selector for VLMs](2026-05-16/cares-context-aware-resolution-selector-for-vlms.md) — arXiv cs.AI, 2026-05-16
 - [The Robot's Inner Critic: Self-Refinement of Social Behaviors through VLM-based Replanning](2026-05-16/the-robots-inner-critic-self-refinement-of-social-behaviors-through-vlm-based-re.md) — arXiv cs.AI, 2026-05-16
 - [Unmasking Algorithmic Bias in Predictive Policing: A GAN-Based Simulation Framework with Multi-City Temporal Analysis](2026-05-16/unmasking-algorithmic-bias-in-predictive-policing-a-gan-based-simulation-framewo.md) — arXiv cs.AI, 2026-05-16
+- [Federated Learning Playground](2026-05-16/federated-learning-playground.md) — arXiv cs.AI, 2026-05-16
+- [An SO(3)-equivariant reciprocal-space neural potential for long-range interactions](2026-05-16/an-so3-equivariant-reciprocal-space-neural-potential-for-long-range-interactions.md) — arXiv cs.AI, 2026-05-16
+- [Points-to-3D: Structure-Aware 3D Generation with Point Cloud Priors](2026-05-16/points-to-3d-structure-aware-3d-generation-with-point-cloud-priors.md) — arXiv cs.AI, 2026-05-16
+- [CIRCUS: Circuit Consensus under Uncertainty via Stability Ensembles](2026-05-16/circus-circuit-consensus-under-uncertainty-via-stability-ensembles.md) — arXiv cs.AI, 2026-05-16
+- [VirPro: Visual-referred Probabilistic Prompt Learning for Weakly-Supervised Monocular 3D Detection](2026-05-16/virpro-visual-referred-probabilistic-prompt-learning-for-weakly-supervised-monoc.md) — arXiv cs.AI, 2026-05-16
+- [Strategic Navigation or Stochastic Search? How Agents and Humans Reason Over Document Collections](2026-05-16/strategic-navigation-or-stochastic-search-how-agents-and-humans-reason-over-docu.md) — arXiv cs.AI, 2026-05-16
+- [Agent Control Protocol: Admission Control for Agent Actions](2026-05-16/agent-control-protocol-admission-control-for-agent-actions.md) — arXiv cs.AI, 2026-05-16
+- [Dementia-R1: Reinforced Pretraining and Reasoning from Unstructured Clinical Notes for Real-World Dementia Prognosis](2026-05-16/dementia-r1-reinforced-pretraining-and-reasoning-from-unstructured-clinical-note.md) — arXiv cs.AI, 2026-05-16
+- [CustomTex: High-fidelity Indoor Scene Texturing via Multi-Reference Customization](2026-05-16/customtex-high-fidelity-indoor-scene-texturing-via-multi-reference-customization.md) — arXiv cs.AI, 2026-05-16
+- [CageDroneRF: A Large-Scale RF Benchmark and Toolkit for Drone Perception](2026-05-16/cagedronerf-a-large-scale-rf-benchmark-and-toolkit-for-drone-perception.md) — arXiv cs.AI, 2026-05-16
+- [FEAT: A Linear-Complexity Foundation Model for Extremely Large Structured Data](2026-05-16/feat-a-linear-complexity-foundation-model-for-extremely-large-structured-data.md) — arXiv cs.AI, 2026-05-16
+- [Guiding Diffusion-based Reconstruction with Contrastive Signals for Balanced Visual Representation](2026-05-16/guiding-diffusion-based-reconstruction-with-contrastive-signals-for-balanced-vis.md) — arXiv cs.AI, 2026-05-16
+- [ClawWorm: Self-Propagating Attacks Across LLM Agent Ecosystems](2026-05-16/clawworm-self-propagating-attacks-across-llm-agent-ecosystems.md) — arXiv cs.AI, 2026-05-16
+- [On the Structural Non-Preservation of Epistemic Behaviour under Policy Transformation](2026-05-16/on-the-structural-non-preservation-of-epistemic-behaviour-under-policy-transform.md) — arXiv cs.AI, 2026-05-16
+- [From Intuition to Investigation: A Tool-Augmented Reasoning MLLM Framework for Generalizable Face Anti-Spoofing](2026-05-16/from-intuition-to-investigation-a-tool-augmented-reasoning-mllm-framework-for-ge.md) — arXiv cs.AI, 2026-05-16
+- [R2-Dreamer: Redundancy-Reduced World Models without Decoders or Augmentation](2026-05-16/r2-dreamer-redundancy-reduced-world-models-without-decoders-or-augmentation.md) — arXiv cs.AI, 2026-05-16
+- [IFNSO: Iteration-Free Newton-Schulz Orthogonalization](2026-05-16/ifnso-iteration-free-newton-schulz-orthogonalization.md) — arXiv cs.AI, 2026-05-16
+- [PlanTwin: Privacy-Preserving Planning Abstractions for Cloud-Assisted LLM Agents](2026-05-16/plantwin-privacy-preserving-planning-abstractions-for-cloud-assisted-llm-agents.md) — arXiv cs.AI, 2026-05-16
+- [A Sheaf-Theoretic and Topological Perspective on Complex Network Modeling and Attention Mechanisms in Graph Neural Models](2026-05-16/a-sheaf-theoretic-and-topological-perspective-on-complex-network-modeling-and-at.md) — arXiv cs.AI, 2026-05-16
+- [MOSS-TTS Technical Report](2026-05-16/moss-tts-technical-report.md) — arXiv cs.AI, 2026-05-16
+- [Retrieval-Augmented LLMs for Security Incident Analysis](2026-05-16/retrieval-augmented-llms-for-security-incident-analysis.md) — arXiv cs.AI, 2026-05-16
+- [A Multi-Perspective Benchmark and Moderation Model for Evaluating Safety and Adversarial Robustness](2026-05-16/a-multi-perspective-benchmark-and-moderation-model-for-evaluating-safety-and-adv.md) — arXiv cs.AI, 2026-05-16
+- [LHAW: Controllable Underspecification for Long-Horizon Tasks](2026-05-16/lhaw-controllable-underspecification-for-long-horizon-tasks.md) — arXiv cs.AI, 2026-05-16
+- [S3T-Former: A Purely Spike-Driven State-Space Topology Transformer for Skeleton Action Recognition](2026-05-16/s3t-former-a-purely-spike-driven-state-space-topology-transformer-for-skeleton-a.md) — arXiv cs.AI, 2026-05-16
+- [StealthRL: Reinforcement Learning Paraphrase Attacks for Multi-Detector Evasion of AI-Text Detectors](2026-05-16/stealthrl-reinforcement-learning-paraphrase-attacks-for-multi-detector-evasion-o.md) — arXiv cs.AI, 2026-05-16
+- [Understanding Task Aggregation for Generalizable Ultrasound Foundation Models](2026-05-16/understanding-task-aggregation-for-generalizable-ultrasound-foundation-models.md) — arXiv cs.AI, 2026-05-16
+- [The Art of Efficient Reasoning: Data, Reward, and Optimization](2026-05-16/the-art-of-efficient-reasoning-data-reward-and-optimization.md) — Reward, 2026-05-16
+- [Spectral Convolution on Orbifolds for Geometric Deep Learning](2026-05-16/spectral-convolution-on-orbifolds-for-geometric-deep-learning.md) — arXiv cs.AI, 2026-05-16
+- [Prompt Injection as Role Confusion](2026-05-16/prompt-injection-as-role-confusion.md) — arXiv cs.AI, 2026-05-16
+- [A Mathematical Theory of Understanding](2026-05-16/a-mathematical-theory-of-understanding.md) — arXiv cs.LG, 2026-05-16
+- [DAPA: Distribution Aware Piecewise Activation Functions for On-Device Transformer Inference and Training](2026-05-16/dapa-distribution-aware-piecewise-activation-functions-for-on-device-transformer.md) — arXiv cs.LG, 2026-05-16
+- [FalconBC: Flow matching for Amortized inference of Latent-CONditioned physiologic Boundary Conditions](2026-05-16/falconbc-flow-matching-for-amortized-inference-of-latent-conditioned-physiologic.md) — arXiv cs.LG, 2026-05-16
+- [GeoLAN: Geometric Learning of Latent Explanatory Directions in Large Language Models](2026-05-16/geolan-geometric-learning-of-latent-explanatory-directions-in-large-language-mod.md) — arXiv cs.LG, 2026-05-16
+- [Warm-Start Flow Matching for Guaranteed Fast Text/Image Generation](2026-05-16/warm-start-flow-matching-for-guaranteed-fast-textimage-generation.md) — arXiv cs.LG, 2026-05-16
+- [DPxFin: Adaptive Differential Privacy for Anti-Money Laundering Detection via Reputation-Weighted Federated Learning](2026-05-16/dpxfin-adaptive-differential-privacy-for-anti-money-laundering-detection-via-rep.md) — arXiv cs.LG, 2026-05-16
+- [MSNet and LS-Net: Scalable Multi-Scale Multi-Representation Networks for Time Series Classification](2026-05-16/msnet-and-ls-net-scalable-multi-scale-multi-representation-networks-for-time-ser.md) — arXiv cs.LG, 2026-05-16
+- [Stochastic Sequential Decision Making over Expanding Networks with Graph Filtering](2026-05-16/stochastic-sequential-decision-making-over-expanding-networks-with-graph-filteri.md) — arXiv cs.LG, 2026-05-16
+- [TTQ: Activation-Aware Test-Time Quantization to Accelerate LLM Inference On The Fly](2026-05-16/ttq-activation-aware-test-time-quantization-to-accelerate-llm-inference-on-the-f.md) — arXiv cs.LG, 2026-05-16
+- [Wearable Foundation Models Should Go Beyond Static Encoders](2026-05-16/wearable-foundation-models-should-go-beyond-static-encoders.md) — arXiv cs.LG, 2026-05-16
+- [BrainSCL: Subtype-Guided Contrastive Learning for Brain Disorder Diagnosis](2026-05-16/brainscl-subtype-guided-contrastive-learning-for-brain-disorder-diagnosis.md) — arXiv cs.LG, 2026-05-16
+- [ICLAD: In-Context Learning for Unified Tabular Anomaly Detection Across Supervision Regimes](2026-05-16/iclad-in-context-learning-for-unified-tabular-anomaly-detection-across-supervisi.md) — arXiv cs.LG, 2026-05-16
+- [CLaRE-ty Amid Chaos: Quantifying Representational Entanglement to Predict Ripple Effects in LLM Editing](2026-05-16/clare-ty-amid-chaos-quantifying-representational-entanglement-to-predict-ripple.md) — arXiv cs.LG, 2026-05-16
+- [Neural Uncertainty Principle: A Unified View of Adversarial Fragility and LLM Hallucination](2026-05-16/neural-uncertainty-principle-a-unified-view-of-adversarial-fragility-and-llm-hal.md) — arXiv cs.LG, 2026-05-16
+- [Scalable Cross-Facility Federated Learning for Scientific Foundation Models on Multiple Supercomputers](2026-05-16/scalable-cross-facility-federated-learning-for-scientific-foundation-models-on-m.md) — arXiv cs.LG, 2026-05-16
+- [PRIME-CVD: A Parametrically Rendered Informatics Medical Environment for Education in Cardiovascular Risk Modelling](2026-05-16/prime-cvd-a-parametrically-rendered-informatics-medical-environment-for-educatio.md) — arXiv cs.LG, 2026-05-16
+- [Deep Hilbert--Galerkin Methods for Infinite-Dimensional PDEs and Optimal Control](2026-05-16/deep-hilbert-galerkin-methods-for-infinite-dimensional-pdes-and-optimal-control.md) — arXiv cs.LG, 2026-05-16
+- [Any-Subgroup Equivariant Networks via Symmetry Breaking](2026-05-16/any-subgroup-equivariant-networks-via-symmetry-breaking.md) — arXiv cs.LG, 2026-05-16
+- [Optimizing Resource-Constrained Non-Pharmaceutical Interventions for Multi-Cluster Outbreak Control Using Hierarchical Reinforcement Learning](2026-05-16/optimizing-resource-constrained-non-pharmaceutical-interventions-for-multi-clust.md) — arXiv cs.LG, 2026-05-16
+- [Anatomical Heterogeneity in Transformer Language Models](2026-05-16/anatomical-heterogeneity-in-transformer-language-models.md) — arXiv cs.LG, 2026-05-16
 - [DeepStock: Reinforcement Learning with Policy Regularizations for Inventory Management](2026-05-15/deepstock-reinforcement-learning-with-policy-regularizations-for-inventory-manag.md) — arXiv cs.AI, 2026-05-15
 - [A Framework for Formalizing LLM Agent Security](2026-05-15/a-framework-for-formalizing-llm-agent-security.md) — arXiv cs.AI, 2026-05-15
 - [TRACE: Trajectory Recovery with State Propagation Diffusion for Urban Mobility](2026-05-15/trace-trajectory-recovery-with-state-propagation-diffusion-for-urban-mobility.md) — arXiv cs.AI, 2026-05-15
