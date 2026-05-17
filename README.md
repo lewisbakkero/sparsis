@@ -4,25 +4,25 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## 📚 Living Reviews
 
-- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Bioinformatics](reviews/applied-computing/life-and-medical-sciences/bioinformatics.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 2 papers analysed | Last updated: 2026-05-16
-- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-05-16
-- [Drug Discovery](reviews/applied-computing/life-and-medical-sciences/drug-discovery.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 3 papers analysed | Last updated: 2026-05-16
-- [Information Extraction](reviews/computing-methodologies/artificial-intelligence/information-extraction.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Knowledge Representation And Reasoning](reviews/computing-methodologies/artificial-intelligence/knowledge-representation-and-reasoning.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Language Models](reviews/computing-methodologies/artificial-intelligence/language-models.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Materials Science](reviews/applied-computing/physical-sciences-and-engineering/materials-science.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Misinformation And Fact Checking](reviews/information-systems/world-wide-web/misinformation-and-fact-checking.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Molecular Simulation](reviews/computing-methodologies/modelling-and-simulation/molecular-simulation.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Physics Informed Machine Learning](reviews/computing-methodologies/modelling-and-simulation/physics-informed-machine-learning.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Planning And Scheduling](reviews/computing-methodologies/artificial-intelligence/planning-and-scheduling.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-05-16
-- [Search Methodologies](reviews/computing-methodologies/artificial-intelligence/search-methodologies.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Text Classification](reviews/computing-methodologies/artificial-intelligence/text-classification.md) — 1 paper analysed | Last updated: 2026-05-16
-- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 2 papers analysed | Last updated: 2026-05-16
+- [Adversarial Examples And Robustness](reviews/security-and-privacy/adversarial-machine-learning/adversarial-examples-and-robustness.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Bioinformatics](reviews/applied-computing/life-and-medical-sciences/bioinformatics.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Computational Chemistry](reviews/applied-computing/physical-sciences-and-engineering/computational-chemistry.md) — 2 papers analysed | Last updated: 2026-05-17
+- [Diffusion Models](reviews/computing-methodologies/machine-learning/diffusion-models.md) — 2 papers analysed | Last updated: 2026-05-17
+- [Drug Discovery](reviews/applied-computing/life-and-medical-sciences/drug-discovery.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Graph Neural Networks](reviews/computing-methodologies/machine-learning/graph-neural-networks.md) — 3 papers analysed | Last updated: 2026-05-17
+- [Information Extraction](reviews/computing-methodologies/artificial-intelligence/information-extraction.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Knowledge Representation And Reasoning](reviews/computing-methodologies/artificial-intelligence/knowledge-representation-and-reasoning.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Language Models](reviews/computing-methodologies/artificial-intelligence/language-models.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Materials Science](reviews/applied-computing/physical-sciences-and-engineering/materials-science.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Misinformation And Fact Checking](reviews/information-systems/world-wide-web/misinformation-and-fact-checking.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Molecular Simulation](reviews/computing-methodologies/modelling-and-simulation/molecular-simulation.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Multi Agent Systems](reviews/computing-methodologies/artificial-intelligence/multi-agent-systems.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Physics Informed Machine Learning](reviews/computing-methodologies/modelling-and-simulation/physics-informed-machine-learning.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Planning And Scheduling](reviews/computing-methodologies/artificial-intelligence/planning-and-scheduling.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Review](reviews/AI Applications/review.md) — 11 papers analysed | Last updated: 2026-05-17
+- [Search Methodologies](reviews/computing-methodologies/artificial-intelligence/search-methodologies.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Text Classification](reviews/computing-methodologies/artificial-intelligence/text-classification.md) — 1 paper analysed | Last updated: 2026-05-17
+- [Transfer Learning](reviews/computing-methodologies/machine-learning/transfer-learning.md) — 2 papers analysed | Last updated: 2026-05-17
 
 ## AI Applications
 
@@ -46,6 +46,49 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ## Uncategorized
 
+- [ODySSeI: An Open-Source End-to-End Framework for Automated Detection, Segmentation, and Severity Estimation of Lesions in Invasive Coronary Angiography Images](2026-05-17/odyssei-an-open-source-end-to-end-framework-for-automated-detection-segmentation.md) — Segmentation, 2026-05-17
+- [On Performance Guarantees for Federated Learning with Personalized Constraints](2026-05-17/on-performance-guarantees-for-federated-learning-with-personalized-constraints.md) — arXiv cs.LG, 2026-05-17
+- [Continual Learning as Shared-Manifold Continuation Under Compatible Shift](2026-05-17/continual-learning-as-shared-manifold-continuation-under-compatible-shift.md) — arXiv cs.LG, 2026-05-17
+- [MeanFlow Meets Control: Scaling Sampled-Data Control for Swarms](2026-05-17/meanflow-meets-control-scaling-sampled-data-control-for-swarms.md) — arXiv cs.LG, 2026-05-17
+- [Significance-Gain Pair Encoding for LLMs: A Statistical Alternative to Frequency-Based Subword Merging](2026-05-17/significance-gain-pair-encoding-for-llms-a-statistical-alternative-to-frequency.md) — arXiv cs.LG, 2026-05-17
+- [Alternating Diffusion for Proximal Sampling with Zeroth Order Queries](2026-05-17/alternating-diffusion-for-proximal-sampling-with-zeroth-order-queries.md) — arXiv cs.LG, 2026-05-17
+- [A Super Fast K-means for Indexing Vector Embeddings](2026-05-17/a-super-fast-k-means-for-indexing-vector-embeddings.md) — arXiv cs.LG, 2026-05-17
+- [Demonstrations, CoT, and Prompting: A Theoretical Analysis of ICL](2026-05-17/demonstrations-cot-and-prompting-a-theoretical-analysis-of-icl.md) — CoT, 2026-05-17
+- [On the Dynamics & Transferability of Latent Generalization during Memorization](2026-05-17/on-the-dynamics-transferability-of-latent-generalization-during-memorization.md) — arXiv cs.LG, 2026-05-17
+- [Automated Membership Inference Attacks: Discovering MIA Signal Computations using LLM Agents](2026-05-17/automated-membership-inference-attacks-discovering-mia-signal-computations-using.md) — arXiv cs.LG, 2026-05-17
+- [How Out-of-Equilibrium Phase Transitions can Seed Pattern Formation in Trained Diffusion Models](2026-05-17/how-out-of-equilibrium-phase-transitions-can-seed-pattern-formation-in-trained-d.md) — arXiv cs.LG, 2026-05-17
+- [Two-Time-Scale Learning Dynamics: A Population View of Neural Network Training](2026-05-17/two-time-scale-learning-dynamics-a-population-view-of-neural-network-training.md) — arXiv cs.LG, 2026-05-17
+- [Quantifying Gate Contribution in Quantum Feature Maps for Scalable Circuit Optimization](2026-05-17/quantifying-gate-contribution-in-quantum-feature-maps-for-scalable-circuit-optim.md) — arXiv cs.LG, 2026-05-17
+- [MOSAIC: Modular Opinion Summarization using Aspect Identification and Clustering](2026-05-17/mosaic-modular-opinion-summarization-using-aspect-identification-and-clustering.md) — arXiv cs.LG, 2026-05-17
+- [Eye Gaze-Informed and Context-Aware Pedestrian Trajectory Prediction in Shared Spaces with Automated Shuttles: A Virtual Reality Study](2026-05-17/eye-gaze-informed-and-context-aware-pedestrian-trajectory-prediction-in-shared-s.md) — arXiv cs.LG, 2026-05-17
+- [Scale-Dependent Radial Geometry and Metric Mismatch in Wasserstein Propagation for Reverse Diffusion](2026-05-17/scale-dependent-radial-geometry-and-metric-mismatch-in-wasserstein-propagation-f.md) — arXiv cs.LG, 2026-05-17
+- [Federated Hyperdimensional Computing for Resource-Constrained Industrial IoT](2026-05-17/federated-hyperdimensional-computing-for-resource-constrained-industrial-iot.md) — arXiv cs.LG, 2026-05-17
+- [Beam-aware Kernelized Contextual Bandits for User Association and Beamforming in mmWave Vehicular Networks](2026-05-17/beam-aware-kernelized-contextual-bandits-for-user-association-and-beamforming-in.md) — arXiv cs.LG, 2026-05-17
+- [RiboSphere: Learning Unified and Efficient Representations of RNA Structures](2026-05-17/ribosphere-learning-unified-and-efficient-representations-of-rna-structures.md) — arXiv cs.LG, 2026-05-17
+- [Trojan horse hunt in deep forecasting models: Insights from the European Space Agency competition](2026-05-17/trojan-horse-hunt-in-deep-forecasting-models-insights-from-the-european-space-ag.md) — arXiv cs.LG, 2026-05-17
+- [Continual Learning for Food Category Classification Dataset: Enhancing Model Adaptability and Performance](2026-05-17/continual-learning-for-food-category-classification-dataset-enhancing-model-adap.md) — arXiv cs.LG, 2026-05-17
+- [GDEGAN: Gaussian Dynamic Equivariant Graph Attention Network for Ligand Binding Site Prediction](2026-05-17/gdegan-gaussian-dynamic-equivariant-graph-attention-network-for-ligand-binding-s.md) — arXiv cs.LG, 2026-05-17
+- [Model-Driven Learning-Based Physical Layer Authentication for Mobile Wi-Fi Devices](2026-05-17/model-driven-learning-based-physical-layer-authentication-for-mobile-wi-fi-devic.md) — arXiv cs.LG, 2026-05-17
+- [FIPO: Eliciting Deep Reasoning with Future-KL Influenced Policy Optimization](2026-05-17/fipo-eliciting-deep-reasoning-with-future-kl-influenced-policy-optimization.md) — arXiv cs.LG, 2026-05-17
+- [GO-GenZip: Goal-Oriented Generative Sampling and Hybrid Compression](2026-05-17/go-genzip-goal-oriented-generative-sampling-and-hybrid-compression.md) — arXiv cs.LG, 2026-05-17
+- [Kolmogorov-Arnold causal generative models](2026-05-17/kolmogorov-arnold-causal-generative-models.md) — arXiv cs.LG, 2026-05-17
+- [Beyond Single Tokens: Distilling Discrete Diffusion Models via Discrete MMD](2026-05-17/beyond-single-tokens-distilling-discrete-diffusion-models-via-discrete-mmd.md) — arXiv cs.LG, 2026-05-17
+- [Regret Analysis of Sleeping Competing Bandits](2026-05-17/regret-analysis-of-sleeping-competing-bandits.md) — arXiv cs.LG, 2026-05-17
+- [Memori: A Persistent Memory Layer for Efficient, Context-Aware LLM Agents](2026-05-17/memori-a-persistent-memory-layer-for-efficient-context-aware-llm-agents.md) — Context-Aware LLM Agents, 2026-05-17
+- [Pseudo-Labeling for Unsupervised Domain Adaptation with Kernel GLMs](2026-05-17/pseudo-labeling-for-unsupervised-domain-adaptation-with-kernel-glms.md) — arXiv cs.LG, 2026-05-17
+- [Dual Path Attribution: Efficient Attribution for SwiGLU-Transformers through Layer-Wise Target Propagation](2026-05-17/dual-path-attribution-efficient-attribution-for-swiglu-transformers-through-laye.md) — arXiv cs.LG, 2026-05-17
+- [Discovery of Decision Synchronization Patterns from Event Logs](2026-05-17/discovery-of-decision-synchronization-patterns-from-event-logs.md) — arXiv cs.LG, 2026-05-17
+- [Scalable Learning of Multivariate Distributions via Coresets](2026-05-17/scalable-learning-of-multivariate-distributions-via-coresets.md) — arXiv cs.LG, 2026-05-17
+- [TuLaBM: Tumor-Biased Latent Bridge Matching for Contrast-Enhanced MRI Synthesis](2026-05-17/tulabm-tumor-biased-latent-bridge-matching-for-contrast-enhanced-mri-synthesis.md) — arXiv cs.LG, 2026-05-17
+- [NASimJax: GPU-Accelerated Policy Learning Framework for Penetration Testing](2026-05-17/nasimjax-gpu-accelerated-policy-learning-framework-for-penetration-testing.md) — arXiv cs.LG, 2026-05-17
+- [Conditioning Protein Generation via Hopfield Pattern Multiplicity](2026-05-17/conditioning-protein-generation-via-hopfield-pattern-multiplicity.md) — arXiv cs.LG, 2026-05-17
+- [Autonoma: A Hierarchical Multi-Agent Framework for End-to-End Workflow Automation](2026-05-17/autonoma-a-hierarchical-multi-agent-framework-for-end-to-end-workflow-automation.md) — arXiv cs.LG, 2026-05-17
+- [Towards Solving Polynomial-Objective Integer Programming with Hypergraph Neural Networks](2026-05-17/towards-solving-polynomial-objective-integer-programming-with-hypergraph-neural.md) — arXiv cs.LG, 2026-05-17
+- [Ontology-Based Knowledge Modeling and Uncertainty-Aware Outdoor Air Quality Assessment Using Weighted Interval Type-2 Fuzzy Logic](2026-05-17/ontology-based-knowledge-modeling-and-uncertainty-aware-outdoor-air-quality-asse.md) — arXiv cs.LG, 2026-05-17
+- [AgenticRS-EnsNAS: Ensemble-Decoupled Self-Evolving Architecture Search](2026-05-17/agenticrs-ensnas-ensemble-decoupled-self-evolving-architecture-search.md) — arXiv cs.LG, 2026-05-17
+- [Heavy-Tailed and Long-Range Dependent Noise in Stochastic Approximation: A Finite-Time Analysis](2026-05-17/heavy-tailed-and-long-range-dependent-noise-in-stochastic-approximation-a-finite.md) — arXiv cs.LG, 2026-05-17
+- [Ensembles-based Feature Guided Analysis](2026-05-17/ensembles-based-feature-guided-analysis.md) — arXiv cs.LG, 2026-05-17
+- [Survey of Various Fuzzy and Uncertain Decision-Making Methods](2026-05-17/survey-of-various-fuzzy-and-uncertain-decision-making-methods.md) — arXiv cs.LG, 2026-05-17
 - [Promoting Critical Thinking With Domain-Specific Generative AI Provocations](2026-05-16/promoting-critical-thinking-with-domain-specific-generative-ai-provocations.md) — arXiv cs.AI, 2026-05-16
 - [Breaking the Capability Ceiling of LLM Post-Training by Reintroducing Markov States](2026-05-16/breaking-the-capability-ceiling-of-llm-post-training-by-reintroducing-markov-sta.md) — arXiv cs.AI, 2026-05-16
 - [OmniDiT: Extending Diffusion Transformer to Omni-VTON Framework](2026-05-16/omnidit-extending-diffusion-transformer-to-omni-vton-framework.md) — arXiv cs.AI, 2026-05-16
@@ -351,4 +394,4 @@ Practitioner-focused breakdowns of academic research in systems, AI, and infrast
 
 ---
 
-*Last updated: 2026-05-16*
+*Last updated: 2026-05-17*
